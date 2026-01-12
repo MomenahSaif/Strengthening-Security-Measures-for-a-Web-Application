@@ -1,5 +1,44 @@
-'user strcit';
+'user strict';
+const bcrypt = require('bcrypt');
+const validator = require('validator');
+const jwt = require('jsonwebtoken');
+const JWT_SECRET = 'your-secret-key';
+
+const logger = require('../../config/logger');
+
+
 module.exports = (app,db) => {
+
+
+function verifyToken(req, res, next) {
+
+    const token = req.session.token;
+
+    if (!token) {
+        return res.redirect('/?message=Authentication required');
+    }
+
+    try {
+        const decoded = jwt.verify(token, JWT_SECRET);
+        req.user = decoded; // attach user info
+        next();
+    } catch (err) {
+        return res.redirect('/?message=Invalid or expired token');
+    }
+}
+
+
+
+app.get('/', (req, res) => {
+    const nunjucks = require('nunjucks');
+    const message = req.query.message || "Please log in to continue";
+
+    const rendered = nunjucks.renderString(message);
+
+    res.render('user.html', {
+        message: rendered
+    });
+});
     //Front End entry page
     /**
      * GET /
@@ -8,8 +47,8 @@ module.exports = (app,db) => {
  | localhost:5000/?message=<script>alert(0)</script>
      * @tags frontend
      * @param {string} message.query - a message to present to the user
-     */
-     app.get('/', (req,res) =>{
+  
+     app.get('/registerform', async (req, res) => {
         console.log(req.session);
   
         const nunjucks = require('nunjucks')
@@ -24,7 +63,7 @@ module.exports = (app,db) => {
         //     message: {message:req.query.message}
         // })
         
-    });
+    });   */
         //Front End register page
     /**
      * GET /register
@@ -48,55 +87,42 @@ module.exports = (app,db) => {
     // })
     
 });
-    //Front End route to Register
-    /**
-     * GET /register
-     * @summary 
-     * @description 
-     * @tags frontend
-     * @param {string} message.query - a message to present to the user
-     * @param {string} email.query.required - email body parameter
-     * @param {string} password.query.required - password body parameter
-     * @param {string} name.query.required - name body parameter
-     * @param {string} address.query.required - address body parameter
-     */
-     app.get('/registerform', (req,res) =>{
-        
-        const userEmail = req.query.email;
-        const userName = req.query.name;
-        const userRole = 'user'
-        const userPassword = req.query.password;
-        const userAddress = req.query.address
-        //validate email using regular expression
-        var emailExpression = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-        var regex = new RegExp(emailExpression)
-        console.log(userEmail)
-            console.log(emailExpression.test(userEmail))
-            if (!emailExpression.test(userEmail)){
-                res.redirect("/register?message=Email coulden't be validated, please try again.")
-                return
-            }
-            const md5 = require('md5')
-        const new_user = db.user.create(
-            {
-                name:userName,
-                email:userEmail,
-                role:userRole,
-                address:userAddress,
-                password:md5(userPassword)
-            }).then(new_user => {
-                res.redirect('/profile?id='+new_user.id);
-            }).catch(
-                (e) =>
-                {
-                    console.log(e)
-                    res.redirect('/?message=Error registering, please try again')
+    
+ 
+	 const validator = require('validator');
+app.get('/registerform', async (req, res) => {
+    try {
+        const rawEmail = req.query.email;
+        const userName = req.query.name ?? '';
+        const userPassword = req.query.password ?? '';
+        const userAddress = req.query.address ?? '';
 
-                }
-            )
-       
-        
-    });
+        if (!rawEmail || !validator.isEmail(rawEmail)) {
+            return res.redirect('/register?message=Invalid email');
+        }
+
+        if (!userPassword || userPassword.length < 6) {
+            return res.redirect('/register?message=Password too short');
+        }
+
+        const hashedPassword = await bcrypt.hash(userPassword, 10);
+
+        const newUser = await db.user.create({
+            email: validator.normalizeEmail(rawEmail),
+            password: hashedPassword,
+            name: userName,
+            address: userAddress,
+            role: 'user'
+        });
+
+        return res.redirect('/profile?id=' + newUser.id);
+
+    } catch (err) {
+        console.error(err);
+        return res.redirect('/register?message=Registration failed');
+    }
+});
+
     //Front End route to log in
     /**
      * GET /login
@@ -107,30 +133,42 @@ module.exports = (app,db) => {
      * @param {string} email.query.required - email body parameter
      * @param {string} password.query.required - password body parameter
      */
-     app.get('/login', (req,res) =>{
-        var userEmail = req.query.email;
-        var userPassword = req.query.password;
-        console.log(req.query.message)
-        const user = db.user.findAll({
-        where: {
-            email: userEmail
-        }}).then(user => {
-            if(user.length == 0){
-                res.redirect('/?message=Password was not found! Please Try again')
-                return;
-            }
+     app.get('/login', async (req, res) => {
 
-            const md5 = require('md5')
-            //compare password with and without hash
-            if((user[0].password == userPassword) || (md5(user[0].password) == userPassword)){
-                req.session.logged = true
-                res.redirect('/profile?id='+user[0].id);
-                return;
-            }
-            res.redirect('/?message=Password was not correct, please try again')
-        })
-        
+    const userEmail = req.query.email  || '';
+    const userPassword = req.query.password;
+
+    const users = await db.user.findAll({
+        where: { email: userEmail }
     });
+
+    if (users.length === 0) {
+        res.redirect('/?message=User not found');
+        return;
+    }
+
+    const user = users[0];
+
+    const match = await bcrypt.compare(userPassword, user.password);
+
+    if (match) {
+        const token = jwt.sign(
+        { id: user.id, email: user.email, role: user.role },
+        JWT_SECRET,
+        { expiresIn: '1h' }
+    	);
+
+        logger.info(`LOGIN SUCCESS: ${userEmail}`);
+    	req.session.logged = true;
+    	req.session.token = token;
+
+    	res.redirect('/profile?id=' + user.id);
+    	return;
+    }
+     logger.warn(`LOGIN FAILED: ${userEmail}`);
+    res.redirect('/?message=Wrong password');
+});
+
     //Front End route to profile
     /**
      * GET /profile
@@ -141,7 +179,7 @@ module.exports = (app,db) => {
      * @param {number} id.query.required - Id number of the profile holder
      * @param {string} profile_description
      */
-     app.get('/profile', (req,res) =>{
+     app.get('/profile', verifyToken, (req,res) =>{
 
         if(!req.query.id){
             res.redirect("/?message=Could not Access profile please log in or register")
@@ -176,9 +214,9 @@ module.exports = (app,db) => {
      * @param {number} id.query.required - Id number of the beer
      * @param {number} user.query.required - User id number of user viewing the page
      * @param {string} relationship - The message a user get when loving a beer (this is shown instead of the relationship)
-     */
+    
      app.get('/beer', (req,res) =>{
-
+        const love_message = "You love this beer ❤️";
         if(!req.query.id){
             res.redirect("/?message=Could not Access beer please try a different beer")
             return;
@@ -220,5 +258,53 @@ module.exports = (app,db) => {
                         
                 });    
             });
+    }); */
+
+	app.get('/beer', verifyToken, (req, res) => {
+
+    if (!req.query.id) {
+        return res.redirect("/?message=Could not Access beer please try a different beer");
+    }
+
+    db.beer.findAll({
+        include: 'users',
+        where: { id: req.query.id }
+    }).then(beer => {
+
+        if (beer.length === 0) {
+            return res.redirect('/?message=Beer not found, please try again');
+        }
+
+        db.user.findOne({ where: { id: req.query.user } }).then(user => {
+
+            if (!user) {
+                return res.redirect('/?message=User not found, please try again');
+            }
+
+            user.hasBeer(beer).then(result => {
+
+                let love_message;
+
+                if (result) {
+                    love_message = "You Love THIS BEER!! ❤️";
+                } else {
+                    love_message = "...";
+                }
+
+                if (req.query.relationship) {
+                    love_message = req.query.relationship;
+                }
+
+                res.render('beer.html', {
+                    beers: beer,
+                    message: love_message,
+                    user: user
+                });
+
+            });
+
+        });
     });
+});
+
 };

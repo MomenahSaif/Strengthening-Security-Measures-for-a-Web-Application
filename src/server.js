@@ -1,4 +1,7 @@
+
+const helmet = require('helmet');
 'user strict';
+const logger = require('./config/logger');
 
 const express = require('express'),
     //morgan = require('morgan'),
@@ -6,6 +9,7 @@ const express = require('express'),
     router = require('./router'),
     bodyParser = require('body-parser'),
     db = require('./orm')
+
 
 
     
@@ -27,7 +31,51 @@ const PORT = config.PORT;
 
 //OPTIONAL: Activate Logging
 // app.use(morgan('combined'));
+
 app.use(bodyParser.json());
+
+app.use(
+  helmet({
+    contentSecurityPolicy: {
+      directives: {
+        defaultSrc: ["'self'"],
+
+        scriptSrc: [
+          "'self'",
+          "'unsafe-inline'",
+          "'unsafe-eval'",
+          "https://buttons.github.io"
+        ],
+
+        styleSrc: [
+          "'self'",
+          "'unsafe-inline'",
+          "https://fonts.googleapis.com"
+        ],
+
+        fontSrc: [
+          "'self'",
+          "https://fonts.gstatic.com"
+        ],
+
+        imgSrc: [
+          "'self'",
+          "data:"
+        ],
+
+        connectSrc: [
+          "'self'",
+          "https://api.github.com"
+        ],
+
+        objectSrc: ["'none'"],
+        frameAncestors: ["'none'"],
+      },
+    },
+    crossOriginEmbedderPolicy: false,
+  })
+);
+
 
 
 //session middleware
@@ -35,8 +83,8 @@ var cookieParser = require('cookie-parser');
 
 var session = require('express-session');
 const SessionCookie =  {
-  secure: false,
-  httpOnly: false,
+  httpOnly: true,
+  secure: false,   // true only if HTTPS
   sameSite: "lax",
   maxAge: 1000 * 60 * 60 * 60 * 24 * 2//2 day
 } 
@@ -64,11 +112,12 @@ app.use(cookieParser());
 router(app, db);
 
 //drop and resync with { force: true } normal with alter:true
-db.sequelize.sync({alter:true}).then(() => {
-    app.listen(PORT, () => {
-      console.log('Express listening on port:', PORT);
-    });
+db.sequelize.sync().then(() => {
+  app.listen(PORT, () => {
+    console.log('Express listening on port:', PORT);
   });
+});
+logger.info('Application started');
 
 const expressJSDocSwagger = require('express-jsdoc-swagger');
 

@@ -1,4 +1,6 @@
-'user strcit';
+'user strict';
+const validator = require('validator');
+const bcrypt = require('bcrypt');
 const config = require('./../../config')
 var jwt = require("jsonwebtoken");
 const { user } = require('../../orm');
@@ -78,34 +80,46 @@ module.exports = (app,db) => {
      * @param {User} request.body.required - User
      * @return {object} 200 - user response
      */
-    app.post('/v1/user/', (req,res) =>{
+    app.post('/v1/user/', async (req, res) => {
 
-        const userEmail = req.body.email;
-        const userName = req.body.name;
-        const userRole = req.body.role
-        const userPassword = req.body.password;
-        const userAddress = req.body.address
-        //validate email using regular expression
-        var emailExpression = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-        var regex = new RegExp(emailExpression)
-            console.log(emailExpression.test(userEmail))
-            if (!emailExpression.test(userEmail)){
-                res.json({error:"regular expression of email couldn't be validated"})
-                return
-            }
-        const new_user = db.user.create(
-            {
-                name:userName,
-                email:userEmail,
-                role:userRole,
-                address:userAddress,
-                password:userPassword
-            }).then(new_user => {
-                res.json(new_user);
-            })
-                
+    //const userEmail = req.body.email || '';
+    const userEmail = validator.normalizeEmail(req.body.email || '');
+    //const userName = req.body.name || '';
+    const userName = validator.escape(req.body.name || '');
+    const userRole = req.body.role || 'user';
+    //const userPassword = req.body.password || '';
+    const userPassword = validator.escape(req.body.password || '');
+    const userAddress = validator.escape(req.body.address || '');
 
-    });
+    // Email validation (basic + crash safe)
+    if (!validator.isEmail(userEmail)) {
+        return res.status(400).json({ error: 'Invalid email format' });
+    }
+
+    // Password length check
+    if (userPassword.length < 6) {
+        return res.status(400).json({ error: 'Password must be at least 6 characters' });
+    }
+
+    try {
+        // Hash password
+        const hashedPassword = await bcrypt.hash(userPassword, 10);
+
+        const new_user = await db.user.create({
+            name: userName,
+            email: userEmail,
+            role: userRole,
+            address: userAddress,
+            password: hashedPassword
+        });
+
+        res.status(201).json(new_user);
+
+    } catch (err) {
+        res.status(500).json({ error: 'User creation failed' });
+    }
+});
+
          /**
      * GET /v1/love/{beer_id}
      * @summary make a user love a beer(CSRF - Client Side Request Forgery GET)
@@ -230,41 +244,29 @@ module.exports = (app,db) => {
      * @return {string} 404 - user not found
      * @return {string} 401 - wrong password
     */
-     app.post('/v1/user/token', (req,res) =>{
+     app.post('/v1/user/token', async (req, res) => {
 
-        const userEmail = req.body.email;
-        const userPassword = req.body.password;
-        const user = db.user.findAll({
-            where: {
-              email: userEmail
-            }}).then(user => {
-                if(user.length == 0){
-                    res.status(404).send({error:'User was not found'})
-                return;
-                }
+    const userEmail = req.body.email || '';
+    const userPassword = req.body.password || '';
 
-                const md5 = require('md5')
-                //compare password with and without hash
-                if((user[0].password == userPassword) || (md5(user[0].password) == userPassword)){
-                    //Add jwt token
-                    //logge in logichere
-                    const jwtTokenSecret = "SuperSecret"
-                    const payload = { "id": user[0].id,"role":user[0].role }
-                    var token = jwt.sign(payload, jwtTokenSecret, {
-                        expiresIn: 86400, // 24 hours
-                      });
-                    res.status(200).json({
-                        jwt:token,
-                        user:user,
-                        
-                    });
-                    return;
-                }
-                res.status(401).json({error:'Password was not correct'})
-            })
-                
+    const users = await db.user.findAll({ where: { email: userEmail } });
 
-    });
+    if (users.length === 0) {
+        return res.status(404).json({ error: 'User was not found' });
+    }
+
+    const match = await bcrypt.compare(userPassword, users[0].password);
+
+    if (!match) {
+        return res.status(401).json({ error: 'Password was not correct' });
+    }
+
+    const payload = { id: users[0].id, role: users[0].role };
+    const token = jwt.sign(payload, "SuperSecret", { expiresIn: '24h' });
+
+    res.status(200).json({ jwt: token });
+});
+
     /**
      * LoginUserDTO for login
      * @typedef {object} LoginUserDTO
@@ -280,33 +282,26 @@ module.exports = (app,db) => {
      * @return {string} 404 - user not found
      * @return {string} 401 - wrong password
     */
-     app.post('/v1/user/login', (req,res) =>{
+    app.post('/v1/user/login', async (req, res) => {
 
-       
-        const userEmail = req.body.email;
-        const userPassword = req.body.password;
-        const user = db.user.findAll({
-            where: {
-              email: userEmail
-            }}).then(user => {
-                if(user.length == 0){
-                    res.status(404).send({error:'User was not found'})
-                return;
-                }
+    const userEmail = req.body.email || '';
+    const userPassword = req.body.password || '';
 
-                const md5 = require('md5')
-                //compare password with and without hash
-                if((user[0].password == userPassword) || (md5(user[0].password) == userPassword)){
-                    //Add jwt token
-                    //logge in logichere
-                    res.status(200).json(user);
-                    return;
-                }
-                res.status(401).json({error:'Password was not correct'})
-            })
-                
+    const users = await db.user.findAll({ where: { email: userEmail } });
 
-    });
+    if (users.length === 0) {
+        return res.status(404).json({ error: 'User was not found' });
+    }
+
+    const match = await bcrypt.compare(userPassword, users[0].password);
+
+    if (!match) {
+        return res.status(401).json({ error: 'Password was not correct' });
+    }
+
+    res.status(200).json(users);
+});
+
 
     /**
      * PUT /v1/user/{user_id}

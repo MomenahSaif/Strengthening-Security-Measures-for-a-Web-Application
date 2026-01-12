@@ -1,0 +1,1171 @@
+2026-01-01T09:40:41.195Z sequelize:pool pool created with max/min: 5/0, no replication
+Thu, 01 Jan 2026 09:40:41 GMT express:application set "x-powered-by" to true
+Thu, 01 Jan 2026 09:40:41 GMT express:application set "etag" to 'weak'
+Thu, 01 Jan 2026 09:40:41 GMT express:application set "etag fn" to [Function: generateETag]
+Thu, 01 Jan 2026 09:40:41 GMT express:application set "env" to 'development'
+Thu, 01 Jan 2026 09:40:41 GMT express:application set "query parser" to 'extended'
+Thu, 01 Jan 2026 09:40:41 GMT express:application set "query parser fn" to [Function: parseExtendedQueryString]
+Thu, 01 Jan 2026 09:40:41 GMT express:application set "subdomain offset" to 2
+Thu, 01 Jan 2026 09:40:41 GMT express:application set "trust proxy" to false
+Thu, 01 Jan 2026 09:40:41 GMT express:application set "trust proxy fn" to [Function: trustNone]
+Thu, 01 Jan 2026 09:40:41 GMT express:application booting in development mode
+Thu, 01 Jan 2026 09:40:41 GMT express:application set "view" to [Function: View]
+Thu, 01 Jan 2026 09:40:41 GMT express:application set "views" to '/home/kali/Desktop/internship/vuln-node.js-express.js-app/views'
+Thu, 01 Jan 2026 09:40:41 GMT express:application set "jsonp callback name" to 'callback'
+Thu, 01 Jan 2026 09:40:41 GMT express:router use '/' query
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router use '/' expressInit
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router use '/' jsonParser
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router use '/' session
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router use '/' cookieParser
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route new '/v1/order'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/v1/order'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route get '/v1/order'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route new '/v1/beer-pic/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/v1/beer-pic/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route get '/v1/beer-pic/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route new '/v1/search/:filter/:query'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/v1/search/:filter/:query'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route get '/v1/search/:filter/:query'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route new '/v1/admin/users/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/v1/admin/users/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route get '/v1/admin/users/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route new '/v1/user/:id'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/v1/user/:id'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route get '/v1/user/:id'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route new '/v1/user/:id'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/v1/user/:id'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route delete '/v1/user/:id'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route new '/v1/user/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/v1/user/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route post '/v1/user/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route new '/v1/love/:beer_id'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/v1/love/:beer_id'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route get '/v1/love/:beer_id'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route new '/v1/love/:beer_id'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/v1/love/:beer_id'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route post '/v1/love/:beer_id'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route new '/v1/user/token'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/v1/user/token'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route post '/v1/user/token'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route new '/v1/user/login'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/v1/user/login'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route post '/v1/user/login'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route new '/v1/user/:id'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/v1/user/:id'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route put '/v1/user/:id'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route new '/v1/admin/promote/:id'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/v1/admin/promote/:id'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route put '/v1/admin/promote/:id'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route new '/v1/user/:id/validate-otp'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/v1/user/:id/validate-otp'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route post '/v1/user/:id/validate-otp'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route new '/v1/status/:brand'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/v1/status/:brand'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route get '/v1/status/:brand'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route new '/v1/redirect/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/v1/redirect/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route get '/v1/redirect/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route new '/v1/init'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/v1/init'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route post '/v1/init'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route new '/v1/test/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/v1/test/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route get '/v1/test/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route new '/v1/admin/new-beer/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/v1/admin/new-beer/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route post '/v1/admin/new-beer/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route new '/v1/admin/upload-pic/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/v1/admin/upload-pic/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route post '/v1/admin/upload-pic/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route post '/v1/admin/upload-pic/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route new '/v1/admin/new-beer-xml/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/v1/admin/new-beer-xml/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route post '/v1/admin/new-beer-xml/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route post '/v1/admin/new-beer-xml/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route get '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route new '/register'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/register'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route get '/register'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route new '/registerform'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/registerform'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route get '/registerform'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route new '/login'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/login'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route get '/login'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route new '/profile'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/profile'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route get '/profile'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route new '/beer'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/beer'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route get '/beer'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router use '/api-docs' <anonymous>
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/api-docs'
+Thu, 01 Jan 2026 09:40:41 GMT express:router use '/api-docs' swaggerInitFn
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/api-docs'
+Thu, 01 Jan 2026 09:40:41 GMT express:router use '/api-docs' serveStatic
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/api-docs'
+Thu, 01 Jan 2026 09:40:41 GMT express:router use '/api-docs' <anonymous>
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/api-docs'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route new '/v1/api-docs'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/v1/api-docs'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:route get '/v1/api-docs'
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:application set "views" to '/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/templates'
+Thu, 01 Jan 2026 09:40:41 GMT express:application set "view engine" to 'html'
+Thu, 01 Jan 2026 09:40:41 GMT express:router use '/' serveStatic
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+Thu, 01 Jan 2026 09:40:41 GMT express:router use '/' <anonymous>
+Thu, 01 Jan 2026 09:40:41 GMT express:router:layer new '/'
+2026-01-01T09:40:41.523Z sequelize:connection:sqlite connection acquired default
+2026-01-01T09:40:41.524Z sequelize:sql:sqlite Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='beers';
+2026-01-01T09:40:41.539Z sequelize:sql:sqlite Executed (default): SELECT name FROM sqlite_master WHERE type='table' AND name='beers';
+2026-01-01T09:40:41.542Z sequelize:sql:sqlite Executing (default): PRAGMA TABLE_INFO(`beers`);
+2026-01-01T09:40:41.542Z sequelize:sql:sqlite Executing (default): PRAGMA foreign_key_list(`beers`)
+2026-01-01T09:40:41.547Z sequelize:sql:sqlite Executed (default): PRAGMA TABLE_INFO(`beers`);
+2026-01-01T09:40:41.548Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_LIST(`beers`)
+2026-01-01T09:40:41.551Z sequelize:sql:sqlite Executed (default): PRAGMA foreign_key_list(`beers`)
+2026-01-01T09:40:41.556Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_LIST(`beers`)
+2026-01-01T09:40:41.556Z sequelize:sql:sqlite Executing (default): PRAGMA foreign_key_list(`beers`)
+2026-01-01T09:40:41.559Z sequelize:sql:sqlite Executed (default): PRAGMA foreign_key_list(`beers`)
+2026-01-01T09:40:41.559Z sequelize:sql:sqlite Executing (default): PRAGMA TABLE_INFO(`beers`);
+2026-01-01T09:40:41.560Z sequelize:sql:sqlite Executed (default): PRAGMA TABLE_INFO(`beers`);
+2026-01-01T09:40:41.560Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_LIST(`beers`)
+2026-01-01T09:40:41.561Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_LIST(`beers`)
+2026-01-01T09:40:41.561Z sequelize:sql:sqlite Executing (default): PRAGMA foreign_key_list(`beers`)
+2026-01-01T09:40:41.562Z sequelize:sql:sqlite Executed (default): PRAGMA foreign_key_list(`beers`)
+2026-01-01T09:40:41.563Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `beers_backup` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.567Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `beers_backup` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.568Z sequelize:sql:sqlite Executing (default): INSERT INTO `beers_backup` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers`;
+2026-01-01T09:40:41.568Z sequelize:sql:sqlite Executed (default): INSERT INTO `beers_backup` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers`;
+2026-01-01T09:40:41.569Z sequelize:sql:sqlite Executing (default): DROP TABLE `beers`;
+2026-01-01T09:40:41.571Z sequelize:sql:sqlite Executed (default): DROP TABLE `beers`;
+2026-01-01T09:40:41.572Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `beers` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.722Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `beers` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.722Z sequelize:sql:sqlite Executing (default): INSERT INTO `beers` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers_backup`;
+2026-01-01T09:40:41.723Z sequelize:sql:sqlite Executed (default): INSERT INTO `beers` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers_backup`;
+2026-01-01T09:40:41.724Z sequelize:sql:sqlite Executing (default): DROP TABLE `beers_backup`;
+2026-01-01T09:40:41.727Z sequelize:sql:sqlite Executed (default): DROP TABLE `beers_backup`;
+2026-01-01T09:40:41.727Z sequelize:sql:sqlite Executing (default): PRAGMA TABLE_INFO(`beers`);
+2026-01-01T09:40:41.728Z sequelize:sql:sqlite Executed (default): PRAGMA TABLE_INFO(`beers`);
+2026-01-01T09:40:41.728Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_LIST(`beers`)
+2026-01-01T09:40:41.729Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_LIST(`beers`)
+2026-01-01T09:40:41.729Z sequelize:sql:sqlite Executing (default): PRAGMA foreign_key_list(`beers`)
+2026-01-01T09:40:41.730Z sequelize:sql:sqlite Executed (default): PRAGMA foreign_key_list(`beers`)
+2026-01-01T09:40:41.730Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `beers_backup` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.734Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `beers_backup` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.734Z sequelize:sql:sqlite Executing (default): INSERT INTO `beers_backup` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers`;
+2026-01-01T09:40:41.735Z sequelize:sql:sqlite Executed (default): INSERT INTO `beers_backup` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers`;
+2026-01-01T09:40:41.735Z sequelize:sql:sqlite Executing (default): DROP TABLE `beers`;
+2026-01-01T09:40:41.738Z sequelize:sql:sqlite Executed (default): DROP TABLE `beers`;
+2026-01-01T09:40:41.739Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `beers` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.741Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `beers` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.741Z sequelize:sql:sqlite Executing (default): INSERT INTO `beers` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers_backup`;
+2026-01-01T09:40:41.742Z sequelize:sql:sqlite Executed (default): INSERT INTO `beers` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers_backup`;
+2026-01-01T09:40:41.742Z sequelize:sql:sqlite Executing (default): DROP TABLE `beers_backup`;
+2026-01-01T09:40:41.745Z sequelize:sql:sqlite Executed (default): DROP TABLE `beers_backup`;
+2026-01-01T09:40:41.746Z sequelize:sql:sqlite Executing (default): PRAGMA TABLE_INFO(`beers`);
+2026-01-01T09:40:41.747Z sequelize:sql:sqlite Executed (default): PRAGMA TABLE_INFO(`beers`);
+2026-01-01T09:40:41.747Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_LIST(`beers`)
+2026-01-01T09:40:41.748Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_LIST(`beers`)
+2026-01-01T09:40:41.748Z sequelize:sql:sqlite Executing (default): PRAGMA foreign_key_list(`beers`)
+2026-01-01T09:40:41.748Z sequelize:sql:sqlite Executed (default): PRAGMA foreign_key_list(`beers`)
+2026-01-01T09:40:41.749Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `beers_backup` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.753Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `beers_backup` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.753Z sequelize:sql:sqlite Executing (default): INSERT INTO `beers_backup` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers`;
+2026-01-01T09:40:41.754Z sequelize:sql:sqlite Executed (default): INSERT INTO `beers_backup` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers`;
+2026-01-01T09:40:41.754Z sequelize:sql:sqlite Executing (default): DROP TABLE `beers`;
+2026-01-01T09:40:41.758Z sequelize:sql:sqlite Executed (default): DROP TABLE `beers`;
+2026-01-01T09:40:41.759Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `beers` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.762Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `beers` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.762Z sequelize:sql:sqlite Executing (default): INSERT INTO `beers` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers_backup`;
+2026-01-01T09:40:41.763Z sequelize:sql:sqlite Executed (default): INSERT INTO `beers` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers_backup`;
+2026-01-01T09:40:41.763Z sequelize:sql:sqlite Executing (default): DROP TABLE `beers_backup`;
+2026-01-01T09:40:41.766Z sequelize:sql:sqlite Executed (default): DROP TABLE `beers_backup`;
+2026-01-01T09:40:41.766Z sequelize:sql:sqlite Executing (default): PRAGMA TABLE_INFO(`beers`);
+2026-01-01T09:40:41.767Z sequelize:sql:sqlite Executed (default): PRAGMA TABLE_INFO(`beers`);
+2026-01-01T09:40:41.767Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_LIST(`beers`)
+2026-01-01T09:40:41.767Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_LIST(`beers`)
+2026-01-01T09:40:41.767Z sequelize:sql:sqlite Executing (default): PRAGMA foreign_key_list(`beers`)
+2026-01-01T09:40:41.768Z sequelize:sql:sqlite Executed (default): PRAGMA foreign_key_list(`beers`)
+2026-01-01T09:40:41.768Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `beers_backup` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.770Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `beers_backup` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.771Z sequelize:sql:sqlite Executing (default): INSERT INTO `beers_backup` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers`;
+2026-01-01T09:40:41.771Z sequelize:sql:sqlite Executed (default): INSERT INTO `beers_backup` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers`;
+2026-01-01T09:40:41.771Z sequelize:sql:sqlite Executing (default): DROP TABLE `beers`;
+2026-01-01T09:40:41.773Z sequelize:sql:sqlite Executed (default): DROP TABLE `beers`;
+2026-01-01T09:40:41.773Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `beers` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.775Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `beers` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.776Z sequelize:sql:sqlite Executing (default): INSERT INTO `beers` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers_backup`;
+2026-01-01T09:40:41.776Z sequelize:sql:sqlite Executed (default): INSERT INTO `beers` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers_backup`;
+2026-01-01T09:40:41.776Z sequelize:sql:sqlite Executing (default): DROP TABLE `beers_backup`;
+2026-01-01T09:40:41.779Z sequelize:sql:sqlite Executed (default): DROP TABLE `beers_backup`;
+2026-01-01T09:40:41.779Z sequelize:sql:sqlite Executing (default): PRAGMA TABLE_INFO(`beers`);
+2026-01-01T09:40:41.779Z sequelize:sql:sqlite Executed (default): PRAGMA TABLE_INFO(`beers`);
+2026-01-01T09:40:41.779Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_LIST(`beers`)
+2026-01-01T09:40:41.780Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_LIST(`beers`)
+2026-01-01T09:40:41.780Z sequelize:sql:sqlite Executing (default): PRAGMA foreign_key_list(`beers`)
+2026-01-01T09:40:41.780Z sequelize:sql:sqlite Executed (default): PRAGMA foreign_key_list(`beers`)
+2026-01-01T09:40:41.781Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `beers_backup` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.783Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `beers_backup` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.783Z sequelize:sql:sqlite Executing (default): INSERT INTO `beers_backup` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers`;
+2026-01-01T09:40:41.784Z sequelize:sql:sqlite Executed (default): INSERT INTO `beers_backup` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers`;
+2026-01-01T09:40:41.784Z sequelize:sql:sqlite Executing (default): DROP TABLE `beers`;
+2026-01-01T09:40:41.786Z sequelize:sql:sqlite Executed (default): DROP TABLE `beers`;
+2026-01-01T09:40:41.786Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `beers` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.788Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `beers` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.788Z sequelize:sql:sqlite Executing (default): INSERT INTO `beers` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers_backup`;
+2026-01-01T09:40:41.789Z sequelize:sql:sqlite Executed (default): INSERT INTO `beers` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers_backup`;
+2026-01-01T09:40:41.789Z sequelize:sql:sqlite Executing (default): DROP TABLE `beers_backup`;
+2026-01-01T09:40:41.791Z sequelize:sql:sqlite Executed (default): DROP TABLE `beers_backup`;
+2026-01-01T09:40:41.792Z sequelize:sql:sqlite Executing (default): PRAGMA TABLE_INFO(`beers`);
+2026-01-01T09:40:41.792Z sequelize:sql:sqlite Executed (default): PRAGMA TABLE_INFO(`beers`);
+2026-01-01T09:40:41.792Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_LIST(`beers`)
+2026-01-01T09:40:41.792Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_LIST(`beers`)
+2026-01-01T09:40:41.793Z sequelize:sql:sqlite Executing (default): PRAGMA foreign_key_list(`beers`)
+2026-01-01T09:40:41.793Z sequelize:sql:sqlite Executed (default): PRAGMA foreign_key_list(`beers`)
+2026-01-01T09:40:41.793Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `beers_backup` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.795Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `beers_backup` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.795Z sequelize:sql:sqlite Executing (default): INSERT INTO `beers_backup` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers`;
+2026-01-01T09:40:41.796Z sequelize:sql:sqlite Executed (default): INSERT INTO `beers_backup` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers`;
+2026-01-01T09:40:41.796Z sequelize:sql:sqlite Executing (default): DROP TABLE `beers`;
+2026-01-01T09:40:41.799Z sequelize:sql:sqlite Executed (default): DROP TABLE `beers`;
+2026-01-01T09:40:41.799Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `beers` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.800Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `beers` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.801Z sequelize:sql:sqlite Executing (default): INSERT INTO `beers` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers_backup`;
+2026-01-01T09:40:41.801Z sequelize:sql:sqlite Executed (default): INSERT INTO `beers` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers_backup`;
+2026-01-01T09:40:41.801Z sequelize:sql:sqlite Executing (default): DROP TABLE `beers_backup`;
+2026-01-01T09:40:41.803Z sequelize:sql:sqlite Executed (default): DROP TABLE `beers_backup`;
+2026-01-01T09:40:41.803Z sequelize:sql:sqlite Executing (default): PRAGMA TABLE_INFO(`beers`);
+2026-01-01T09:40:41.804Z sequelize:sql:sqlite Executed (default): PRAGMA TABLE_INFO(`beers`);
+2026-01-01T09:40:41.804Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_LIST(`beers`)
+2026-01-01T09:40:41.804Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_LIST(`beers`)
+2026-01-01T09:40:41.805Z sequelize:sql:sqlite Executing (default): PRAGMA foreign_key_list(`beers`)
+2026-01-01T09:40:41.805Z sequelize:sql:sqlite Executed (default): PRAGMA foreign_key_list(`beers`)
+2026-01-01T09:40:41.805Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `beers_backup` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.807Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `beers_backup` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.807Z sequelize:sql:sqlite Executing (default): INSERT INTO `beers_backup` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers`;
+2026-01-01T09:40:41.808Z sequelize:sql:sqlite Executed (default): INSERT INTO `beers_backup` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers`;
+2026-01-01T09:40:41.808Z sequelize:sql:sqlite Executing (default): DROP TABLE `beers`;
+2026-01-01T09:40:41.809Z sequelize:sql:sqlite Executed (default): DROP TABLE `beers`;
+2026-01-01T09:40:41.809Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `beers` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.811Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `beers` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.812Z sequelize:sql:sqlite Executing (default): INSERT INTO `beers` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers_backup`;
+2026-01-01T09:40:41.812Z sequelize:sql:sqlite Executed (default): INSERT INTO `beers` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers_backup`;
+2026-01-01T09:40:41.812Z sequelize:sql:sqlite Executing (default): DROP TABLE `beers_backup`;
+2026-01-01T09:40:41.815Z sequelize:sql:sqlite Executed (default): DROP TABLE `beers_backup`;
+2026-01-01T09:40:41.815Z sequelize:sql:sqlite Executing (default): PRAGMA TABLE_INFO(`beers`);
+2026-01-01T09:40:41.815Z sequelize:sql:sqlite Executed (default): PRAGMA TABLE_INFO(`beers`);
+2026-01-01T09:40:41.816Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_LIST(`beers`)
+2026-01-01T09:40:41.816Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_LIST(`beers`)
+2026-01-01T09:40:41.816Z sequelize:sql:sqlite Executing (default): PRAGMA foreign_key_list(`beers`)
+2026-01-01T09:40:41.816Z sequelize:sql:sqlite Executed (default): PRAGMA foreign_key_list(`beers`)
+2026-01-01T09:40:41.817Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `beers_backup` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.819Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `beers_backup` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.819Z sequelize:sql:sqlite Executing (default): INSERT INTO `beers_backup` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers`;
+2026-01-01T09:40:41.819Z sequelize:sql:sqlite Executed (default): INSERT INTO `beers_backup` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers`;
+2026-01-01T09:40:41.820Z sequelize:sql:sqlite Executing (default): DROP TABLE `beers`;
+2026-01-01T09:40:41.821Z sequelize:sql:sqlite Executed (default): DROP TABLE `beers`;
+2026-01-01T09:40:41.821Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `beers` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.823Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `beers` (`id` INTEGER PRIMARY KEY, `name` VARCHAR(255) NOT NULL, `picture` VARCHAR(255), `price` FLOAT NOT NULL, `currency` TEXT, `stock` TEXT, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.823Z sequelize:sql:sqlite Executing (default): INSERT INTO `beers` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers_backup`;
+2026-01-01T09:40:41.824Z sequelize:sql:sqlite Executed (default): INSERT INTO `beers` SELECT `id`, `name`, `picture`, `price`, `currency`, `stock`, `created_at`, `updated_at`, `deleted_at` FROM `beers_backup`;
+2026-01-01T09:40:41.824Z sequelize:sql:sqlite Executing (default): DROP TABLE `beers_backup`;
+2026-01-01T09:40:41.826Z sequelize:sql:sqlite Executed (default): DROP TABLE `beers_backup`;
+2026-01-01T09:40:41.826Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_LIST(`beers`)
+2026-01-01T09:40:41.826Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_LIST(`beers`)
+2026-01-01T09:40:41.827Z sequelize:sql:sqlite Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='users';
+2026-01-01T09:40:41.827Z sequelize:sql:sqlite Executed (default): SELECT name FROM sqlite_master WHERE type='table' AND name='users';
+2026-01-01T09:40:41.827Z sequelize:sql:sqlite Executing (default): PRAGMA TABLE_INFO(`users`);
+2026-01-01T09:40:41.828Z sequelize:sql:sqlite Executing (default): PRAGMA foreign_key_list(`users`)
+2026-01-01T09:40:41.828Z sequelize:sql:sqlite Executed (default): PRAGMA TABLE_INFO(`users`);
+2026-01-01T09:40:41.828Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_LIST(`users`)
+2026-01-01T09:40:41.829Z sequelize:sql:sqlite Executed (default): PRAGMA foreign_key_list(`users`)
+2026-01-01T09:40:41.829Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_LIST(`users`)
+2026-01-01T09:40:41.829Z sequelize:sql:sqlite Executing (default): PRAGMA foreign_key_list(`users`)
+2026-01-01T09:40:41.829Z sequelize:sql:sqlite Executed (default): PRAGMA foreign_key_list(`users`)
+2026-01-01T09:40:41.830Z sequelize:sql:sqlite Executing (default): PRAGMA TABLE_INFO(`users`);
+2026-01-01T09:40:41.830Z sequelize:sql:sqlite Executed (default): PRAGMA TABLE_INFO(`users`);
+2026-01-01T09:40:41.830Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_LIST(`users`)
+2026-01-01T09:40:41.830Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_LIST(`users`)
+2026-01-01T09:40:41.831Z sequelize:sql:sqlite Executing (default): PRAGMA foreign_key_list(`users`)
+2026-01-01T09:40:41.831Z sequelize:sql:sqlite Executed (default): PRAGMA foreign_key_list(`users`)
+2026-01-01T09:40:41.831Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `users_backup` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.834Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `users_backup` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.834Z sequelize:sql:sqlite Executing (default): INSERT INTO `users_backup` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users`;
+2026-01-01T09:40:41.836Z sequelize:sql:sqlite Executed (default): INSERT INTO `users_backup` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users`;
+2026-01-01T09:40:41.836Z sequelize:sql:sqlite Executing (default): DROP TABLE `users`;
+2026-01-01T09:40:41.839Z sequelize:sql:sqlite Executed (default): DROP TABLE `users`;
+2026-01-01T09:40:41.839Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.841Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.841Z sequelize:sql:sqlite Executing (default): INSERT INTO `users` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users_backup`;
+2026-01-01T09:40:41.843Z sequelize:sql:sqlite Executed (default): INSERT INTO `users` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users_backup`;
+2026-01-01T09:40:41.843Z sequelize:sql:sqlite Executing (default): DROP TABLE `users_backup`;
+2026-01-01T09:40:41.845Z sequelize:sql:sqlite Executed (default): DROP TABLE `users_backup`;
+2026-01-01T09:40:41.845Z sequelize:sql:sqlite Executing (default): PRAGMA TABLE_INFO(`users`);
+2026-01-01T09:40:41.846Z sequelize:sql:sqlite Executed (default): PRAGMA TABLE_INFO(`users`);
+2026-01-01T09:40:41.846Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_LIST(`users`)
+2026-01-01T09:40:41.846Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_LIST(`users`)
+2026-01-01T09:40:41.847Z sequelize:sql:sqlite Executing (default): PRAGMA foreign_key_list(`users`)
+2026-01-01T09:40:41.847Z sequelize:sql:sqlite Executed (default): PRAGMA foreign_key_list(`users`)
+2026-01-01T09:40:41.847Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `users_backup` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.849Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `users_backup` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.850Z sequelize:sql:sqlite Executing (default): INSERT INTO `users_backup` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users`;
+2026-01-01T09:40:41.852Z sequelize:sql:sqlite Executed (default): INSERT INTO `users_backup` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users`;
+2026-01-01T09:40:41.852Z sequelize:sql:sqlite Executing (default): DROP TABLE `users`;
+2026-01-01T09:40:41.855Z sequelize:sql:sqlite Executed (default): DROP TABLE `users`;
+2026-01-01T09:40:41.855Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.856Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.857Z sequelize:sql:sqlite Executing (default): INSERT INTO `users` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users_backup`;
+2026-01-01T09:40:41.859Z sequelize:sql:sqlite Executed (default): INSERT INTO `users` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users_backup`;
+2026-01-01T09:40:41.859Z sequelize:sql:sqlite Executing (default): DROP TABLE `users_backup`;
+2026-01-01T09:40:41.861Z sequelize:sql:sqlite Executed (default): DROP TABLE `users_backup`;
+2026-01-01T09:40:41.862Z sequelize:sql:sqlite Executing (default): PRAGMA TABLE_INFO(`users`);
+2026-01-01T09:40:41.862Z sequelize:sql:sqlite Executed (default): PRAGMA TABLE_INFO(`users`);
+2026-01-01T09:40:41.862Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_LIST(`users`)
+2026-01-01T09:40:41.863Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_LIST(`users`)
+2026-01-01T09:40:41.863Z sequelize:sql:sqlite Executing (default): PRAGMA foreign_key_list(`users`)
+2026-01-01T09:40:41.863Z sequelize:sql:sqlite Executed (default): PRAGMA foreign_key_list(`users`)
+2026-01-01T09:40:41.863Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `users_backup` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.866Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `users_backup` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.866Z sequelize:sql:sqlite Executing (default): INSERT INTO `users_backup` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users`;
+2026-01-01T09:40:41.868Z sequelize:sql:sqlite Executed (default): INSERT INTO `users_backup` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users`;
+2026-01-01T09:40:41.869Z sequelize:sql:sqlite Executing (default): DROP TABLE `users`;
+2026-01-01T09:40:41.872Z sequelize:sql:sqlite Executed (default): DROP TABLE `users`;
+2026-01-01T09:40:41.872Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.873Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.874Z sequelize:sql:sqlite Executing (default): INSERT INTO `users` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users_backup`;
+2026-01-01T09:40:41.876Z sequelize:sql:sqlite Executed (default): INSERT INTO `users` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users_backup`;
+2026-01-01T09:40:41.876Z sequelize:sql:sqlite Executing (default): DROP TABLE `users_backup`;
+2026-01-01T09:40:41.877Z sequelize:sql:sqlite Executed (default): DROP TABLE `users_backup`;
+2026-01-01T09:40:41.878Z sequelize:sql:sqlite Executing (default): PRAGMA TABLE_INFO(`users`);
+2026-01-01T09:40:41.878Z sequelize:sql:sqlite Executed (default): PRAGMA TABLE_INFO(`users`);
+2026-01-01T09:40:41.878Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_LIST(`users`)
+2026-01-01T09:40:41.878Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_LIST(`users`)
+2026-01-01T09:40:41.879Z sequelize:sql:sqlite Executing (default): PRAGMA foreign_key_list(`users`)
+2026-01-01T09:40:41.879Z sequelize:sql:sqlite Executed (default): PRAGMA foreign_key_list(`users`)
+2026-01-01T09:40:41.879Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `users_backup` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.881Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `users_backup` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.882Z sequelize:sql:sqlite Executing (default): INSERT INTO `users_backup` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users`;
+2026-01-01T09:40:41.884Z sequelize:sql:sqlite Executed (default): INSERT INTO `users_backup` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users`;
+2026-01-01T09:40:41.884Z sequelize:sql:sqlite Executing (default): DROP TABLE `users`;
+2026-01-01T09:40:41.886Z sequelize:sql:sqlite Executed (default): DROP TABLE `users`;
+2026-01-01T09:40:41.886Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.888Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.888Z sequelize:sql:sqlite Executing (default): INSERT INTO `users` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users_backup`;
+2026-01-01T09:40:41.889Z sequelize:sql:sqlite Executed (default): INSERT INTO `users` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users_backup`;
+2026-01-01T09:40:41.889Z sequelize:sql:sqlite Executing (default): DROP TABLE `users_backup`;
+2026-01-01T09:40:41.891Z sequelize:sql:sqlite Executed (default): DROP TABLE `users_backup`;
+2026-01-01T09:40:41.892Z sequelize:sql:sqlite Executing (default): PRAGMA TABLE_INFO(`users`);
+2026-01-01T09:40:41.892Z sequelize:sql:sqlite Executed (default): PRAGMA TABLE_INFO(`users`);
+2026-01-01T09:40:41.892Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_LIST(`users`)
+2026-01-01T09:40:41.893Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_LIST(`users`)
+2026-01-01T09:40:41.893Z sequelize:sql:sqlite Executing (default): PRAGMA foreign_key_list(`users`)
+2026-01-01T09:40:41.893Z sequelize:sql:sqlite Executed (default): PRAGMA foreign_key_list(`users`)
+2026-01-01T09:40:41.894Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `users_backup` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.896Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `users_backup` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.896Z sequelize:sql:sqlite Executing (default): INSERT INTO `users_backup` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users`;
+2026-01-01T09:40:41.898Z sequelize:sql:sqlite Executed (default): INSERT INTO `users_backup` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users`;
+2026-01-01T09:40:41.898Z sequelize:sql:sqlite Executing (default): DROP TABLE `users`;
+2026-01-01T09:40:41.900Z sequelize:sql:sqlite Executed (default): DROP TABLE `users`;
+2026-01-01T09:40:41.900Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.902Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.902Z sequelize:sql:sqlite Executing (default): INSERT INTO `users` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users_backup`;
+2026-01-01T09:40:41.904Z sequelize:sql:sqlite Executed (default): INSERT INTO `users` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users_backup`;
+2026-01-01T09:40:41.904Z sequelize:sql:sqlite Executing (default): DROP TABLE `users_backup`;
+2026-01-01T09:40:41.907Z sequelize:sql:sqlite Executed (default): DROP TABLE `users_backup`;
+2026-01-01T09:40:41.907Z sequelize:sql:sqlite Executing (default): PRAGMA TABLE_INFO(`users`);
+2026-01-01T09:40:41.908Z sequelize:sql:sqlite Executed (default): PRAGMA TABLE_INFO(`users`);
+2026-01-01T09:40:41.908Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_LIST(`users`)
+2026-01-01T09:40:41.908Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_LIST(`users`)
+2026-01-01T09:40:41.909Z sequelize:sql:sqlite Executing (default): PRAGMA foreign_key_list(`users`)
+2026-01-01T09:40:41.909Z sequelize:sql:sqlite Executed (default): PRAGMA foreign_key_list(`users`)
+2026-01-01T09:40:41.909Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `users_backup` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.912Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `users_backup` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.912Z sequelize:sql:sqlite Executing (default): INSERT INTO `users_backup` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users`;
+2026-01-01T09:40:41.915Z sequelize:sql:sqlite Executed (default): INSERT INTO `users_backup` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users`;
+2026-01-01T09:40:41.915Z sequelize:sql:sqlite Executing (default): DROP TABLE `users`;
+2026-01-01T09:40:41.917Z sequelize:sql:sqlite Executed (default): DROP TABLE `users`;
+2026-01-01T09:40:41.917Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.919Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.920Z sequelize:sql:sqlite Executing (default): INSERT INTO `users` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users_backup`;
+2026-01-01T09:40:41.921Z sequelize:sql:sqlite Executed (default): INSERT INTO `users` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users_backup`;
+2026-01-01T09:40:41.921Z sequelize:sql:sqlite Executing (default): DROP TABLE `users_backup`;
+2026-01-01T09:40:41.924Z sequelize:sql:sqlite Executed (default): DROP TABLE `users_backup`;
+2026-01-01T09:40:41.924Z sequelize:sql:sqlite Executing (default): PRAGMA TABLE_INFO(`users`);
+2026-01-01T09:40:41.925Z sequelize:sql:sqlite Executed (default): PRAGMA TABLE_INFO(`users`);
+2026-01-01T09:40:41.925Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_LIST(`users`)
+2026-01-01T09:40:41.925Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_LIST(`users`)
+2026-01-01T09:40:41.925Z sequelize:sql:sqlite Executing (default): PRAGMA foreign_key_list(`users`)
+2026-01-01T09:40:41.926Z sequelize:sql:sqlite Executed (default): PRAGMA foreign_key_list(`users`)
+2026-01-01T09:40:41.926Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `users_backup` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.928Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `users_backup` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.929Z sequelize:sql:sqlite Executing (default): INSERT INTO `users_backup` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users`;
+2026-01-01T09:40:41.932Z sequelize:sql:sqlite Executed (default): INSERT INTO `users_backup` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users`;
+2026-01-01T09:40:41.932Z sequelize:sql:sqlite Executing (default): DROP TABLE `users`;
+2026-01-01T09:40:41.941Z sequelize:sql:sqlite Executed (default): DROP TABLE `users`;
+2026-01-01T09:40:41.941Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.944Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.944Z sequelize:sql:sqlite Executing (default): INSERT INTO `users` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users_backup`;
+2026-01-01T09:40:41.947Z sequelize:sql:sqlite Executed (default): INSERT INTO `users` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users_backup`;
+2026-01-01T09:40:41.947Z sequelize:sql:sqlite Executing (default): DROP TABLE `users_backup`;
+2026-01-01T09:40:41.949Z sequelize:sql:sqlite Executed (default): DROP TABLE `users_backup`;
+2026-01-01T09:40:41.949Z sequelize:sql:sqlite Executing (default): PRAGMA TABLE_INFO(`users`);
+2026-01-01T09:40:41.950Z sequelize:sql:sqlite Executed (default): PRAGMA TABLE_INFO(`users`);
+2026-01-01T09:40:41.950Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_LIST(`users`)
+2026-01-01T09:40:41.950Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_LIST(`users`)
+2026-01-01T09:40:41.950Z sequelize:sql:sqlite Executing (default): PRAGMA foreign_key_list(`users`)
+2026-01-01T09:40:41.951Z sequelize:sql:sqlite Executed (default): PRAGMA foreign_key_list(`users`)
+2026-01-01T09:40:41.951Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `users_backup` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.953Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `users_backup` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.953Z sequelize:sql:sqlite Executing (default): INSERT INTO `users_backup` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users`;
+2026-01-01T09:40:41.955Z sequelize:sql:sqlite Executed (default): INSERT INTO `users_backup` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users`;
+2026-01-01T09:40:41.956Z sequelize:sql:sqlite Executing (default): DROP TABLE `users`;
+2026-01-01T09:40:41.959Z sequelize:sql:sqlite Executed (default): DROP TABLE `users`;
+2026-01-01T09:40:41.959Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.961Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.961Z sequelize:sql:sqlite Executing (default): INSERT INTO `users` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users_backup`;
+2026-01-01T09:40:41.963Z sequelize:sql:sqlite Executed (default): INSERT INTO `users` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users_backup`;
+2026-01-01T09:40:41.964Z sequelize:sql:sqlite Executing (default): DROP TABLE `users_backup`;
+2026-01-01T09:40:41.966Z sequelize:sql:sqlite Executed (default): DROP TABLE `users_backup`;
+2026-01-01T09:40:41.966Z sequelize:sql:sqlite Executing (default): PRAGMA TABLE_INFO(`users`);
+2026-01-01T09:40:41.967Z sequelize:sql:sqlite Executed (default): PRAGMA TABLE_INFO(`users`);
+2026-01-01T09:40:41.967Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_LIST(`users`)
+2026-01-01T09:40:41.967Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_LIST(`users`)
+2026-01-01T09:40:41.967Z sequelize:sql:sqlite Executing (default): PRAGMA foreign_key_list(`users`)
+2026-01-01T09:40:41.968Z sequelize:sql:sqlite Executed (default): PRAGMA foreign_key_list(`users`)
+2026-01-01T09:40:41.968Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `users_backup` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.971Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `users_backup` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.972Z sequelize:sql:sqlite Executing (default): INSERT INTO `users_backup` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users`;
+2026-01-01T09:40:41.974Z sequelize:sql:sqlite Executed (default): INSERT INTO `users_backup` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users`;
+2026-01-01T09:40:41.974Z sequelize:sql:sqlite Executing (default): DROP TABLE `users`;
+2026-01-01T09:40:41.977Z sequelize:sql:sqlite Executed (default): DROP TABLE `users`;
+2026-01-01T09:40:41.977Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.980Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY, `email` VARCHAR(255) NOT NULL, `profile_pic` VARCHAR(255), `password` VARCHAR(255) NOT NULL, `role` TEXT DEFAULT 'user', `address` VARCHAR(255), `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `deleted_at` DATETIME);
+2026-01-01T09:40:41.980Z sequelize:sql:sqlite Executing (default): INSERT INTO `users` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users_backup`;
+2026-01-01T09:40:41.983Z sequelize:sql:sqlite Executed (default): INSERT INTO `users` SELECT `id`, `email`, `profile_pic`, `password`, `role`, `address`, `name`, `created_at`, `updated_at`, `deleted_at` FROM `users_backup`;
+2026-01-01T09:40:41.983Z sequelize:sql:sqlite Executing (default): DROP TABLE `users_backup`;
+2026-01-01T09:40:41.985Z sequelize:sql:sqlite Executed (default): DROP TABLE `users_backup`;
+2026-01-01T09:40:41.985Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_LIST(`users`)
+2026-01-01T09:40:41.985Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_LIST(`users`)
+2026-01-01T09:40:41.985Z sequelize:sql:sqlite Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='beer_users';
+2026-01-01T09:40:41.986Z sequelize:sql:sqlite Executed (default): SELECT name FROM sqlite_master WHERE type='table' AND name='beer_users';
+2026-01-01T09:40:41.986Z sequelize:sql:sqlite Executing (default): PRAGMA TABLE_INFO(`beer_users`);
+2026-01-01T09:40:41.986Z sequelize:sql:sqlite Executing (default): PRAGMA foreign_key_list(`beer_users`)
+2026-01-01T09:40:41.987Z sequelize:sql:sqlite Executed (default): PRAGMA TABLE_INFO(`beer_users`);
+2026-01-01T09:40:41.987Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_LIST(`beer_users`)
+2026-01-01T09:40:41.987Z sequelize:sql:sqlite Executed (default): PRAGMA foreign_key_list(`beer_users`)
+2026-01-01T09:40:41.987Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_LIST(`beer_users`)
+2026-01-01T09:40:41.988Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_beer_users_1`)
+2026-01-01T09:40:41.988Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_beer_users_2`)
+2026-01-01T09:40:41.988Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_beer_users_3`)
+2026-01-01T09:40:41.988Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_INFO(`sqlite_autoindex_beer_users_1`)
+2026-01-01T09:40:41.989Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_INFO(`sqlite_autoindex_beer_users_2`)
+2026-01-01T09:40:41.989Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_INFO(`sqlite_autoindex_beer_users_3`)
+2026-01-01T09:40:41.989Z sequelize:sql:sqlite Executing (default): PRAGMA foreign_key_list(`beer_users`)
+2026-01-01T09:40:41.989Z sequelize:sql:sqlite Executed (default): PRAGMA foreign_key_list(`beer_users`)
+2026-01-01T09:40:41.990Z sequelize:sql:sqlite Executing (default): PRAGMA TABLE_INFO(`beer_users`);
+2026-01-01T09:40:41.990Z sequelize:sql:sqlite Executed (default): PRAGMA TABLE_INFO(`beer_users`);
+2026-01-01T09:40:41.990Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_LIST(`beer_users`)
+2026-01-01T09:40:41.991Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_LIST(`beer_users`)
+2026-01-01T09:40:41.991Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_beer_users_1`)
+2026-01-01T09:40:41.991Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_beer_users_2`)
+2026-01-01T09:40:41.991Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_beer_users_3`)
+2026-01-01T09:40:41.991Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_INFO(`sqlite_autoindex_beer_users_1`)
+2026-01-01T09:40:41.992Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_INFO(`sqlite_autoindex_beer_users_2`)
+2026-01-01T09:40:41.992Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_INFO(`sqlite_autoindex_beer_users_3`)
+2026-01-01T09:40:41.992Z sequelize:sql:sqlite Executing (default): PRAGMA foreign_key_list(`beer_users`)
+2026-01-01T09:40:41.992Z sequelize:sql:sqlite Executed (default): PRAGMA foreign_key_list(`beer_users`)
+2026-01-01T09:40:41.993Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `beer_users_backup` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `user_id` INTEGER NOT NULL UNIQUE REFERENCES `users` (`id`), `beer_id` INTEGER NOT NULL UNIQUE REFERENCES `beers` (`id`), PRIMARY KEY (`user_id`, `beer_id`));
+2026-01-01T09:40:41.995Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `beer_users_backup` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `user_id` INTEGER NOT NULL UNIQUE REFERENCES `users` (`id`), `beer_id` INTEGER NOT NULL UNIQUE REFERENCES `beers` (`id`), PRIMARY KEY (`user_id`, `beer_id`));
+2026-01-01T09:40:41.996Z sequelize:sql:sqlite Executing (default): INSERT INTO `beer_users_backup` SELECT `created_at`, `updated_at`, `user_id`, `beer_id` FROM `beer_users`;
+2026-01-01T09:40:41.996Z sequelize:sql:sqlite Executed (default): INSERT INTO `beer_users_backup` SELECT `created_at`, `updated_at`, `user_id`, `beer_id` FROM `beer_users`;
+2026-01-01T09:40:41.996Z sequelize:sql:sqlite Executing (default): DROP TABLE `beer_users`;
+2026-01-01T09:40:42.000Z sequelize:sql:sqlite Executed (default): DROP TABLE `beer_users`;
+2026-01-01T09:40:42.000Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `beer_users` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `user_id` INTEGER NOT NULL UNIQUE REFERENCES `users` (`id`), `beer_id` INTEGER NOT NULL UNIQUE REFERENCES `beers` (`id`), PRIMARY KEY (`user_id`, `beer_id`));
+2026-01-01T09:40:42.002Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `beer_users` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `user_id` INTEGER NOT NULL UNIQUE REFERENCES `users` (`id`), `beer_id` INTEGER NOT NULL UNIQUE REFERENCES `beers` (`id`), PRIMARY KEY (`user_id`, `beer_id`));
+2026-01-01T09:40:42.002Z sequelize:sql:sqlite Executing (default): INSERT INTO `beer_users` SELECT `created_at`, `updated_at`, `user_id`, `beer_id` FROM `beer_users_backup`;
+2026-01-01T09:40:42.003Z sequelize:sql:sqlite Executed (default): INSERT INTO `beer_users` SELECT `created_at`, `updated_at`, `user_id`, `beer_id` FROM `beer_users_backup`;
+2026-01-01T09:40:42.003Z sequelize:sql:sqlite Executing (default): DROP TABLE `beer_users_backup`;
+2026-01-01T09:40:42.005Z sequelize:sql:sqlite Executed (default): DROP TABLE `beer_users_backup`;
+2026-01-01T09:40:42.005Z sequelize:sql:sqlite Executing (default): PRAGMA TABLE_INFO(`beer_users`);
+2026-01-01T09:40:42.006Z sequelize:sql:sqlite Executed (default): PRAGMA TABLE_INFO(`beer_users`);
+2026-01-01T09:40:42.006Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_LIST(`beer_users`)
+2026-01-01T09:40:42.006Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_LIST(`beer_users`)
+2026-01-01T09:40:42.006Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_beer_users_1`)
+2026-01-01T09:40:42.006Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_beer_users_2`)
+2026-01-01T09:40:42.007Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_beer_users_3`)
+2026-01-01T09:40:42.007Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_INFO(`sqlite_autoindex_beer_users_1`)
+2026-01-01T09:40:42.007Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_INFO(`sqlite_autoindex_beer_users_2`)
+2026-01-01T09:40:42.008Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_INFO(`sqlite_autoindex_beer_users_3`)
+2026-01-01T09:40:42.008Z sequelize:sql:sqlite Executing (default): PRAGMA foreign_key_list(`beer_users`)
+2026-01-01T09:40:42.008Z sequelize:sql:sqlite Executed (default): PRAGMA foreign_key_list(`beer_users`)
+2026-01-01T09:40:42.008Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `beer_users_backup` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `user_id` INTEGER NOT NULL UNIQUE REFERENCES `users` (`id`), `beer_id` INTEGER NOT NULL UNIQUE REFERENCES `beers` (`id`), PRIMARY KEY (`user_id`, `beer_id`));
+2026-01-01T09:40:42.011Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `beer_users_backup` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `user_id` INTEGER NOT NULL UNIQUE REFERENCES `users` (`id`), `beer_id` INTEGER NOT NULL UNIQUE REFERENCES `beers` (`id`), PRIMARY KEY (`user_id`, `beer_id`));
+2026-01-01T09:40:42.011Z sequelize:sql:sqlite Executing (default): INSERT INTO `beer_users_backup` SELECT `created_at`, `updated_at`, `user_id`, `beer_id` FROM `beer_users`;
+2026-01-01T09:40:42.012Z sequelize:sql:sqlite Executed (default): INSERT INTO `beer_users_backup` SELECT `created_at`, `updated_at`, `user_id`, `beer_id` FROM `beer_users`;
+2026-01-01T09:40:42.012Z sequelize:sql:sqlite Executing (default): DROP TABLE `beer_users`;
+2026-01-01T09:40:42.014Z sequelize:sql:sqlite Executed (default): DROP TABLE `beer_users`;
+2026-01-01T09:40:42.014Z sequelize:sql:sqlite Executing (default): CREATE TABLE IF NOT EXISTS `beer_users` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `user_id` INTEGER NOT NULL UNIQUE REFERENCES `users` (`id`), `beer_id` INTEGER NOT NULL UNIQUE REFERENCES `beers` (`id`), PRIMARY KEY (`user_id`, `beer_id`));
+2026-01-01T09:40:42.016Z sequelize:sql:sqlite Executed (default): CREATE TABLE IF NOT EXISTS `beer_users` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `user_id` INTEGER NOT NULL UNIQUE REFERENCES `users` (`id`), `beer_id` INTEGER NOT NULL UNIQUE REFERENCES `beers` (`id`), PRIMARY KEY (`user_id`, `beer_id`));
+2026-01-01T09:40:42.016Z sequelize:sql:sqlite Executing (default): INSERT INTO `beer_users` SELECT `created_at`, `updated_at`, `user_id`, `beer_id` FROM `beer_users_backup`;
+2026-01-01T09:40:42.017Z sequelize:sql:sqlite Executed (default): INSERT INTO `beer_users` SELECT `created_at`, `updated_at`, `user_id`, `beer_id` FROM `beer_users_backup`;
+2026-01-01T09:40:42.017Z sequelize:sql:sqlite Executing (default): DROP TABLE `beer_users_backup`;
+2026-01-01T09:40:42.019Z sequelize:sql:sqlite Executed (default): DROP TABLE `beer_users_backup`;
+2026-01-01T09:40:42.019Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_LIST(`beer_users`)
+2026-01-01T09:40:42.019Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_LIST(`beer_users`)
+2026-01-01T09:40:42.019Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_beer_users_1`)
+2026-01-01T09:40:42.020Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_beer_users_2`)
+2026-01-01T09:40:42.020Z sequelize:sql:sqlite Executing (default): PRAGMA INDEX_INFO(`sqlite_autoindex_beer_users_3`)
+2026-01-01T09:40:42.020Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_INFO(`sqlite_autoindex_beer_users_1`)
+2026-01-01T09:40:42.020Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_INFO(`sqlite_autoindex_beer_users_2`)
+2026-01-01T09:40:42.021Z sequelize:sql:sqlite Executed (default): PRAGMA INDEX_INFO(`sqlite_autoindex_beer_users_3`)
+Thu, 01 Jan 2026 09:40:44 GMT express:router dispatching GET /
+Thu, 01 Jan 2026 09:40:44 GMT express:router query  : /
+Thu, 01 Jan 2026 09:40:44 GMT express:router expressInit  : /
+Thu, 01 Jan 2026 09:40:44 GMT express:router jsonParser  : /
+Thu, 01 Jan 2026 09:40:44 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:40:44 GMT express:router session  : /
+Thu, 01 Jan 2026 09:40:44 GMT express-session fetching 1767258795811
+Thu, 01 Jan 2026 09:40:44 GMT express-session no session found
+Thu, 01 Jan 2026 09:40:44 GMT express:router cookieParser  : /
+Thu, 01 Jan 2026 09:40:44 GMT express:view lookup "user.html"
+Thu, 01 Jan 2026 09:40:44 GMT express:view stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/templates/user.html"
+Thu, 01 Jan 2026 09:40:44 GMT express:view render "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/templates/user.html"
+Thu, 01 Jan 2026 09:40:44 GMT express-session saving 1767260444447
+Thu, 01 Jan 2026 09:40:44 GMT express-session set-cookie sessionID=s%3A1767260444447.u4QbDhxZSy3jBS8wIn4XywBkNKPkzZLCjmlTdGqLysQ; Path=/; Expires=Fri, 01 May 2026 09:40:44 GMT; SameSite=Lax
+Thu, 01 Jan 2026 09:40:44 GMT express:router dispatching GET /vendor/fonts/boxicons.css
+Thu, 01 Jan 2026 09:40:44 GMT express:router query  : /vendor/fonts/boxicons.css
+Thu, 01 Jan 2026 09:40:44 GMT express:router expressInit  : /vendor/fonts/boxicons.css
+Thu, 01 Jan 2026 09:40:44 GMT express:router jsonParser  : /vendor/fonts/boxicons.css
+Thu, 01 Jan 2026 09:40:44 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:40:44 GMT express:router session  : /vendor/fonts/boxicons.css
+Thu, 01 Jan 2026 09:40:44 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:40:44 GMT express-session session found
+Thu, 01 Jan 2026 09:40:44 GMT express:router cookieParser  : /vendor/fonts/boxicons.css
+Thu, 01 Jan 2026 09:40:44 GMT express:router serveStatic  : /vendor/fonts/boxicons.css
+Thu, 01 Jan 2026 09:40:44 GMT send stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/fonts/boxicons.css"
+Thu, 01 Jan 2026 09:40:44 GMT send pipe "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/fonts/boxicons.css"
+Thu, 01 Jan 2026 09:40:44 GMT send accept ranges
+Thu, 01 Jan 2026 09:40:44 GMT send cache-control public, max-age=0
+Thu, 01 Jan 2026 09:40:44 GMT send modified Thu, 01 Jan 2026 08:57:50 GMT
+Thu, 01 Jan 2026 09:40:44 GMT send etag W/"1387f-19b78c71154"
+Thu, 01 Jan 2026 09:40:44 GMT send content-type text/css
+Thu, 01 Jan 2026 09:40:44 GMT send not modified
+Thu, 01 Jan 2026 09:40:44 GMT express-session touching
+Thu, 01 Jan 2026 09:40:44 GMT express-session touched
+Thu, 01 Jan 2026 09:40:44 GMT express:router dispatching GET /vendor/css/core.css
+Thu, 01 Jan 2026 09:40:44 GMT express:router query  : /vendor/css/core.css
+Thu, 01 Jan 2026 09:40:44 GMT express:router expressInit  : /vendor/css/core.css
+Thu, 01 Jan 2026 09:40:44 GMT express:router jsonParser  : /vendor/css/core.css
+Thu, 01 Jan 2026 09:40:44 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:40:44 GMT express:router session  : /vendor/css/core.css
+Thu, 01 Jan 2026 09:40:44 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:40:44 GMT express:router dispatching GET /vendor/css/theme-default.css
+Thu, 01 Jan 2026 09:40:44 GMT express:router query  : /vendor/css/theme-default.css
+Thu, 01 Jan 2026 09:40:44 GMT express:router expressInit  : /vendor/css/theme-default.css
+Thu, 01 Jan 2026 09:40:44 GMT express:router jsonParser  : /vendor/css/theme-default.css
+Thu, 01 Jan 2026 09:40:44 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:40:44 GMT express:router session  : /vendor/css/theme-default.css
+Thu, 01 Jan 2026 09:40:44 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:40:44 GMT express:router dispatching GET /css/demo.css
+Thu, 01 Jan 2026 09:40:44 GMT express:router query  : /css/demo.css
+Thu, 01 Jan 2026 09:40:44 GMT express:router expressInit  : /css/demo.css
+Thu, 01 Jan 2026 09:40:44 GMT express:router jsonParser  : /css/demo.css
+Thu, 01 Jan 2026 09:40:44 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:40:44 GMT express:router session  : /css/demo.css
+Thu, 01 Jan 2026 09:40:44 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:40:44 GMT express-session session found
+Thu, 01 Jan 2026 09:40:44 GMT express:router cookieParser  : /vendor/css/core.css
+Thu, 01 Jan 2026 09:40:44 GMT express:router serveStatic  : /vendor/css/core.css
+Thu, 01 Jan 2026 09:40:44 GMT send stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/css/core.css"
+Thu, 01 Jan 2026 09:40:44 GMT express-session session found
+Thu, 01 Jan 2026 09:40:44 GMT express:router cookieParser  : /vendor/css/theme-default.css
+Thu, 01 Jan 2026 09:40:44 GMT express:router serveStatic  : /vendor/css/theme-default.css
+Thu, 01 Jan 2026 09:40:44 GMT send stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/css/theme-default.css"
+Thu, 01 Jan 2026 09:40:44 GMT express-session session found
+Thu, 01 Jan 2026 09:40:44 GMT express:router cookieParser  : /css/demo.css
+Thu, 01 Jan 2026 09:40:44 GMT express:router serveStatic  : /css/demo.css
+Thu, 01 Jan 2026 09:40:44 GMT send stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/css/demo.css"
+Thu, 01 Jan 2026 09:40:44 GMT express:router dispatching GET /vendor/css/pages/page-auth.css
+Thu, 01 Jan 2026 09:40:44 GMT express:router query  : /vendor/css/pages/page-auth.css
+Thu, 01 Jan 2026 09:40:44 GMT express:router expressInit  : /vendor/css/pages/page-auth.css
+Thu, 01 Jan 2026 09:40:44 GMT express:router jsonParser  : /vendor/css/pages/page-auth.css
+Thu, 01 Jan 2026 09:40:44 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:40:44 GMT express:router session  : /vendor/css/pages/page-auth.css
+Thu, 01 Jan 2026 09:40:44 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:40:44 GMT send pipe "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/css/core.css"
+Thu, 01 Jan 2026 09:40:44 GMT send accept ranges
+Thu, 01 Jan 2026 09:40:44 GMT send cache-control public, max-age=0
+Thu, 01 Jan 2026 09:40:44 GMT send modified Thu, 01 Jan 2026 08:57:50 GMT
+Thu, 01 Jan 2026 09:40:44 GMT send etag W/"efac5-19b78c71150"
+Thu, 01 Jan 2026 09:40:44 GMT send content-type text/css
+Thu, 01 Jan 2026 09:40:44 GMT send not modified
+Thu, 01 Jan 2026 09:40:44 GMT express-session touching
+Thu, 01 Jan 2026 09:40:44 GMT send pipe "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/css/theme-default.css"
+Thu, 01 Jan 2026 09:40:44 GMT send accept ranges
+Thu, 01 Jan 2026 09:40:44 GMT send cache-control public, max-age=0
+Thu, 01 Jan 2026 09:40:44 GMT send modified Thu, 01 Jan 2026 08:57:50 GMT
+Thu, 01 Jan 2026 09:40:44 GMT send etag W/"113f0-19b78c71154"
+Thu, 01 Jan 2026 09:40:44 GMT send content-type text/css
+Thu, 01 Jan 2026 09:40:44 GMT send not modified
+Thu, 01 Jan 2026 09:40:44 GMT express-session touching
+Thu, 01 Jan 2026 09:40:44 GMT send pipe "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/css/demo.css"
+Thu, 01 Jan 2026 09:40:44 GMT send accept ranges
+Thu, 01 Jan 2026 09:40:44 GMT send cache-control public, max-age=0
+Thu, 01 Jan 2026 09:40:44 GMT send modified Thu, 01 Jan 2026 08:57:50 GMT
+Thu, 01 Jan 2026 09:40:44 GMT send etag W/"9ef-19b78c71148"
+Thu, 01 Jan 2026 09:40:44 GMT send content-type text/css
+Thu, 01 Jan 2026 09:40:44 GMT send not modified
+Thu, 01 Jan 2026 09:40:44 GMT express-session touching
+Thu, 01 Jan 2026 09:40:44 GMT express:router dispatching GET /vendor/libs/perfect-scrollbar/perfect-scrollbar.css
+Thu, 01 Jan 2026 09:40:44 GMT express:router query  : /vendor/libs/perfect-scrollbar/perfect-scrollbar.css
+Thu, 01 Jan 2026 09:40:44 GMT express:router expressInit  : /vendor/libs/perfect-scrollbar/perfect-scrollbar.css
+Thu, 01 Jan 2026 09:40:44 GMT express:router jsonParser  : /vendor/libs/perfect-scrollbar/perfect-scrollbar.css
+Thu, 01 Jan 2026 09:40:44 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:40:44 GMT express:router session  : /vendor/libs/perfect-scrollbar/perfect-scrollbar.css
+Thu, 01 Jan 2026 09:40:44 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:40:44 GMT express-session session found
+Thu, 01 Jan 2026 09:40:44 GMT express:router cookieParser  : /vendor/css/pages/page-auth.css
+Thu, 01 Jan 2026 09:40:44 GMT express:router serveStatic  : /vendor/css/pages/page-auth.css
+Thu, 01 Jan 2026 09:40:44 GMT send stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/css/pages/page-auth.css"
+Thu, 01 Jan 2026 09:40:44 GMT express-session touched
+Thu, 01 Jan 2026 09:40:44 GMT express-session touched
+Thu, 01 Jan 2026 09:40:44 GMT express-session touched
+Thu, 01 Jan 2026 09:40:44 GMT express-session session found
+Thu, 01 Jan 2026 09:40:44 GMT express:router cookieParser  : /vendor/libs/perfect-scrollbar/perfect-scrollbar.css
+Thu, 01 Jan 2026 09:40:44 GMT express:router serveStatic  : /vendor/libs/perfect-scrollbar/perfect-scrollbar.css
+Thu, 01 Jan 2026 09:40:44 GMT send stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/libs/perfect-scrollbar/perfect-scrollbar.css"
+Thu, 01 Jan 2026 09:40:44 GMT send pipe "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/css/pages/page-auth.css"
+Thu, 01 Jan 2026 09:40:44 GMT send accept ranges
+Thu, 01 Jan 2026 09:40:44 GMT send cache-control public, max-age=0
+Thu, 01 Jan 2026 09:40:44 GMT send modified Thu, 01 Jan 2026 08:57:50 GMT
+Thu, 01 Jan 2026 09:40:44 GMT send etag W/"8d2c-19b78c71154"
+Thu, 01 Jan 2026 09:40:44 GMT send content-type text/css
+Thu, 01 Jan 2026 09:40:44 GMT send not modified
+Thu, 01 Jan 2026 09:40:44 GMT express-session touching
+Thu, 01 Jan 2026 09:40:44 GMT express:router dispatching GET /vendor/js/helpers.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router query  : /vendor/js/helpers.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router expressInit  : /vendor/js/helpers.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router jsonParser  : /vendor/js/helpers.js
+Thu, 01 Jan 2026 09:40:44 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:40:44 GMT express:router session  : /vendor/js/helpers.js
+Thu, 01 Jan 2026 09:40:44 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:40:44 GMT express-session touched
+Thu, 01 Jan 2026 09:40:44 GMT express-session session found
+Thu, 01 Jan 2026 09:40:44 GMT express:router cookieParser  : /vendor/js/helpers.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router serveStatic  : /vendor/js/helpers.js
+Thu, 01 Jan 2026 09:40:44 GMT send stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/js/helpers.js"
+Thu, 01 Jan 2026 09:40:44 GMT send pipe "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/libs/perfect-scrollbar/perfect-scrollbar.css"
+Thu, 01 Jan 2026 09:40:44 GMT send accept ranges
+Thu, 01 Jan 2026 09:40:44 GMT send cache-control public, max-age=0
+Thu, 01 Jan 2026 09:40:44 GMT send modified Thu, 01 Jan 2026 08:57:50 GMT
+Thu, 01 Jan 2026 09:40:44 GMT send etag W/"1390-19b78c71188"
+Thu, 01 Jan 2026 09:40:44 GMT send content-type text/css
+Thu, 01 Jan 2026 09:40:44 GMT send not modified
+Thu, 01 Jan 2026 09:40:44 GMT express-session touching
+Thu, 01 Jan 2026 09:40:44 GMT send pipe "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/js/helpers.js"
+Thu, 01 Jan 2026 09:40:44 GMT send accept ranges
+Thu, 01 Jan 2026 09:40:44 GMT send cache-control public, max-age=0
+Thu, 01 Jan 2026 09:40:44 GMT send modified Thu, 01 Jan 2026 08:57:50 GMT
+Thu, 01 Jan 2026 09:40:44 GMT send etag W/"192a7-19b78c71168"
+Thu, 01 Jan 2026 09:40:44 GMT send content-type application/javascript
+Thu, 01 Jan 2026 09:40:44 GMT send not modified
+Thu, 01 Jan 2026 09:40:44 GMT express-session touching
+Thu, 01 Jan 2026 09:40:44 GMT express:router dispatching GET /js/config.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router query  : /js/config.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router expressInit  : /js/config.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router jsonParser  : /js/config.js
+Thu, 01 Jan 2026 09:40:44 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:40:44 GMT express:router session  : /js/config.js
+Thu, 01 Jan 2026 09:40:44 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:40:44 GMT express:router dispatching GET /vendor/libs/jquery/jquery.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router query  : /vendor/libs/jquery/jquery.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router expressInit  : /vendor/libs/jquery/jquery.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router jsonParser  : /vendor/libs/jquery/jquery.js
+Thu, 01 Jan 2026 09:40:44 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:40:44 GMT express:router session  : /vendor/libs/jquery/jquery.js
+Thu, 01 Jan 2026 09:40:44 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:40:44 GMT express:router dispatching GET /vendor/libs/popper/popper.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router query  : /vendor/libs/popper/popper.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router expressInit  : /vendor/libs/popper/popper.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router jsonParser  : /vendor/libs/popper/popper.js
+Thu, 01 Jan 2026 09:40:44 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:40:44 GMT express:router session  : /vendor/libs/popper/popper.js
+Thu, 01 Jan 2026 09:40:44 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:40:44 GMT express:router dispatching GET /vendor/js/bootstrap.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router query  : /vendor/js/bootstrap.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router expressInit  : /vendor/js/bootstrap.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router jsonParser  : /vendor/js/bootstrap.js
+Thu, 01 Jan 2026 09:40:44 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:40:44 GMT express:router session  : /vendor/js/bootstrap.js
+Thu, 01 Jan 2026 09:40:44 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:40:44 GMT express-session touched
+Thu, 01 Jan 2026 09:40:44 GMT express-session touched
+Thu, 01 Jan 2026 09:40:44 GMT express-session session found
+Thu, 01 Jan 2026 09:40:44 GMT express:router cookieParser  : /js/config.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router serveStatic  : /js/config.js
+Thu, 01 Jan 2026 09:40:44 GMT send stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/js/config.js"
+Thu, 01 Jan 2026 09:40:44 GMT express-session session found
+Thu, 01 Jan 2026 09:40:44 GMT express:router cookieParser  : /vendor/libs/jquery/jquery.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router serveStatic  : /vendor/libs/jquery/jquery.js
+Thu, 01 Jan 2026 09:40:44 GMT send stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/libs/jquery/jquery.js"
+Thu, 01 Jan 2026 09:40:44 GMT express-session session found
+Thu, 01 Jan 2026 09:40:44 GMT express:router cookieParser  : /vendor/libs/popper/popper.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router serveStatic  : /vendor/libs/popper/popper.js
+Thu, 01 Jan 2026 09:40:44 GMT send stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/libs/popper/popper.js"
+Thu, 01 Jan 2026 09:40:44 GMT express-session session found
+Thu, 01 Jan 2026 09:40:44 GMT express:router cookieParser  : /vendor/js/bootstrap.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router serveStatic  : /vendor/js/bootstrap.js
+Thu, 01 Jan 2026 09:40:44 GMT send stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/js/bootstrap.js"
+Thu, 01 Jan 2026 09:40:44 GMT send pipe "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/js/config.js"
+Thu, 01 Jan 2026 09:40:44 GMT send accept ranges
+Thu, 01 Jan 2026 09:40:44 GMT send cache-control public, max-age=0
+Thu, 01 Jan 2026 09:40:44 GMT send modified Thu, 01 Jan 2026 08:57:50 GMT
+Thu, 01 Jan 2026 09:40:44 GMT send etag W/"2ca-19b78c7114c"
+Thu, 01 Jan 2026 09:40:44 GMT send content-type application/javascript
+Thu, 01 Jan 2026 09:40:44 GMT send not modified
+Thu, 01 Jan 2026 09:40:44 GMT express-session touching
+Thu, 01 Jan 2026 09:40:44 GMT send pipe "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/libs/jquery/jquery.js"
+Thu, 01 Jan 2026 09:40:44 GMT send accept ranges
+Thu, 01 Jan 2026 09:40:44 GMT send cache-control public, max-age=0
+Thu, 01 Jan 2026 09:40:44 GMT send modified Thu, 01 Jan 2026 08:57:50 GMT
+Thu, 01 Jan 2026 09:40:44 GMT send etag W/"cb5ce-19b78c71184"
+Thu, 01 Jan 2026 09:40:44 GMT send content-type application/javascript
+Thu, 01 Jan 2026 09:40:44 GMT send not modified
+Thu, 01 Jan 2026 09:40:44 GMT express-session touching
+Thu, 01 Jan 2026 09:40:44 GMT send pipe "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/libs/popper/popper.js"
+Thu, 01 Jan 2026 09:40:44 GMT send accept ranges
+Thu, 01 Jan 2026 09:40:44 GMT send cache-control public, max-age=0
+Thu, 01 Jan 2026 09:40:44 GMT send modified Thu, 01 Jan 2026 08:57:50 GMT
+Thu, 01 Jan 2026 09:40:44 GMT send etag W/"e194-19b78c7118c"
+Thu, 01 Jan 2026 09:40:44 GMT send content-type application/javascript
+Thu, 01 Jan 2026 09:40:44 GMT send not modified
+Thu, 01 Jan 2026 09:40:44 GMT express-session touching
+Thu, 01 Jan 2026 09:40:44 GMT express:router dispatching GET /vendor/libs/perfect-scrollbar/perfect-scrollbar.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router query  : /vendor/libs/perfect-scrollbar/perfect-scrollbar.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router expressInit  : /vendor/libs/perfect-scrollbar/perfect-scrollbar.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router jsonParser  : /vendor/libs/perfect-scrollbar/perfect-scrollbar.js
+Thu, 01 Jan 2026 09:40:44 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:40:44 GMT express:router session  : /vendor/libs/perfect-scrollbar/perfect-scrollbar.js
+Thu, 01 Jan 2026 09:40:44 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:40:44 GMT express:router dispatching GET /vendor/js/menu.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router query  : /vendor/js/menu.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router expressInit  : /vendor/js/menu.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router jsonParser  : /vendor/js/menu.js
+Thu, 01 Jan 2026 09:40:44 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:40:44 GMT express:router session  : /vendor/js/menu.js
+Thu, 01 Jan 2026 09:40:44 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:40:44 GMT express-session touched
+Thu, 01 Jan 2026 09:40:44 GMT express-session touched
+Thu, 01 Jan 2026 09:40:44 GMT express-session touched
+Thu, 01 Jan 2026 09:40:44 GMT express-session session found
+Thu, 01 Jan 2026 09:40:44 GMT express:router cookieParser  : /vendor/libs/perfect-scrollbar/perfect-scrollbar.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router serveStatic  : /vendor/libs/perfect-scrollbar/perfect-scrollbar.js
+Thu, 01 Jan 2026 09:40:44 GMT send stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"
+Thu, 01 Jan 2026 09:40:44 GMT express-session session found
+Thu, 01 Jan 2026 09:40:44 GMT express:router cookieParser  : /vendor/js/menu.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router serveStatic  : /vendor/js/menu.js
+Thu, 01 Jan 2026 09:40:44 GMT send stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/js/menu.js"
+Thu, 01 Jan 2026 09:40:44 GMT send pipe "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/js/bootstrap.js"
+Thu, 01 Jan 2026 09:40:44 GMT send accept ranges
+Thu, 01 Jan 2026 09:40:44 GMT send cache-control public, max-age=0
+Thu, 01 Jan 2026 09:40:44 GMT send modified Thu, 01 Jan 2026 08:57:50 GMT
+Thu, 01 Jan 2026 09:40:44 GMT send etag W/"cda64-19b78c71168"
+Thu, 01 Jan 2026 09:40:44 GMT send content-type application/javascript
+Thu, 01 Jan 2026 09:40:44 GMT send not modified
+Thu, 01 Jan 2026 09:40:44 GMT express-session touching
+Thu, 01 Jan 2026 09:40:44 GMT send pipe "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"
+Thu, 01 Jan 2026 09:40:44 GMT send accept ranges
+Thu, 01 Jan 2026 09:40:44 GMT send cache-control public, max-age=0
+Thu, 01 Jan 2026 09:40:44 GMT send modified Thu, 01 Jan 2026 08:57:50 GMT
+Thu, 01 Jan 2026 09:40:44 GMT send etag W/"1a8cb-19b78c71188"
+Thu, 01 Jan 2026 09:40:44 GMT send content-type application/javascript
+Thu, 01 Jan 2026 09:40:44 GMT send not modified
+Thu, 01 Jan 2026 09:40:44 GMT express-session touching
+Thu, 01 Jan 2026 09:40:44 GMT express:router dispatching GET /js/main.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router query  : /js/main.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router expressInit  : /js/main.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router jsonParser  : /js/main.js
+Thu, 01 Jan 2026 09:40:44 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:40:44 GMT express:router session  : /js/main.js
+Thu, 01 Jan 2026 09:40:44 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:40:44 GMT express-session touched
+Thu, 01 Jan 2026 09:40:44 GMT express-session touched
+Thu, 01 Jan 2026 09:40:44 GMT express-session session found
+Thu, 01 Jan 2026 09:40:44 GMT express:router cookieParser  : /js/main.js
+Thu, 01 Jan 2026 09:40:44 GMT express:router serveStatic  : /js/main.js
+Thu, 01 Jan 2026 09:40:44 GMT send stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/js/main.js"
+Thu, 01 Jan 2026 09:40:44 GMT send pipe "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/js/menu.js"
+Thu, 01 Jan 2026 09:40:44 GMT send accept ranges
+Thu, 01 Jan 2026 09:40:44 GMT send cache-control public, max-age=0
+Thu, 01 Jan 2026 09:40:44 GMT send modified Thu, 01 Jan 2026 08:57:50 GMT
+Thu, 01 Jan 2026 09:40:44 GMT send etag W/"13937-19b78c71168"
+Thu, 01 Jan 2026 09:40:44 GMT send content-type application/javascript
+Thu, 01 Jan 2026 09:40:44 GMT send not modified
+Thu, 01 Jan 2026 09:40:44 GMT express-session touching
+Thu, 01 Jan 2026 09:40:44 GMT send pipe "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/js/main.js"
+Thu, 01 Jan 2026 09:40:44 GMT send accept ranges
+Thu, 01 Jan 2026 09:40:44 GMT send cache-control public, max-age=0
+Thu, 01 Jan 2026 09:40:44 GMT send modified Thu, 01 Jan 2026 08:57:50 GMT
+Thu, 01 Jan 2026 09:40:44 GMT send etag W/"f06-19b78c7114c"
+Thu, 01 Jan 2026 09:40:44 GMT send content-type application/javascript
+Thu, 01 Jan 2026 09:40:44 GMT send not modified
+Thu, 01 Jan 2026 09:40:44 GMT express-session touching
+Thu, 01 Jan 2026 09:40:44 GMT express-session touched
+Thu, 01 Jan 2026 09:40:44 GMT express-session touched
+Thu, 01 Jan 2026 09:42:23 GMT express:router dispatching GET /register
+Thu, 01 Jan 2026 09:42:23 GMT express:router query  : /register
+Thu, 01 Jan 2026 09:42:23 GMT express:router expressInit  : /register
+Thu, 01 Jan 2026 09:42:23 GMT express:router jsonParser  : /register
+Thu, 01 Jan 2026 09:42:23 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:42:23 GMT express:router session  : /register
+Thu, 01 Jan 2026 09:42:23 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:42:23 GMT express-session session found
+Thu, 01 Jan 2026 09:42:23 GMT express:router cookieParser  : /register
+Thu, 01 Jan 2026 09:42:23 GMT express:view lookup "user-register.html"
+Thu, 01 Jan 2026 09:42:23 GMT express:view stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/templates/user-register.html"
+Thu, 01 Jan 2026 09:42:23 GMT express:view render "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/templates/user-register.html"
+Thu, 01 Jan 2026 09:42:23 GMT express-session touching
+Thu, 01 Jan 2026 09:42:23 GMT express-session touched
+Thu, 01 Jan 2026 09:42:23 GMT express:router dispatching GET /vendor/fonts/boxicons.css
+Thu, 01 Jan 2026 09:42:23 GMT express:router query  : /vendor/fonts/boxicons.css
+Thu, 01 Jan 2026 09:42:23 GMT express:router expressInit  : /vendor/fonts/boxicons.css
+Thu, 01 Jan 2026 09:42:23 GMT express:router jsonParser  : /vendor/fonts/boxicons.css
+Thu, 01 Jan 2026 09:42:23 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:42:23 GMT express:router session  : /vendor/fonts/boxicons.css
+Thu, 01 Jan 2026 09:42:23 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:42:23 GMT express-session session found
+Thu, 01 Jan 2026 09:42:23 GMT express:router cookieParser  : /vendor/fonts/boxicons.css
+Thu, 01 Jan 2026 09:42:23 GMT express:router serveStatic  : /vendor/fonts/boxicons.css
+Thu, 01 Jan 2026 09:42:23 GMT send stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/fonts/boxicons.css"
+Thu, 01 Jan 2026 09:42:23 GMT send pipe "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/fonts/boxicons.css"
+Thu, 01 Jan 2026 09:42:23 GMT send accept ranges
+Thu, 01 Jan 2026 09:42:23 GMT send cache-control public, max-age=0
+Thu, 01 Jan 2026 09:42:23 GMT send modified Thu, 01 Jan 2026 08:57:50 GMT
+Thu, 01 Jan 2026 09:42:23 GMT send etag W/"1387f-19b78c71154"
+Thu, 01 Jan 2026 09:42:23 GMT send content-type text/css
+Thu, 01 Jan 2026 09:42:23 GMT send not modified
+Thu, 01 Jan 2026 09:42:23 GMT express-session touching
+Thu, 01 Jan 2026 09:42:23 GMT express-session touched
+Thu, 01 Jan 2026 09:42:23 GMT express:router dispatching GET /vendor/css/core.css
+Thu, 01 Jan 2026 09:42:23 GMT express:router query  : /vendor/css/core.css
+Thu, 01 Jan 2026 09:42:23 GMT express:router expressInit  : /vendor/css/core.css
+Thu, 01 Jan 2026 09:42:23 GMT express:router jsonParser  : /vendor/css/core.css
+Thu, 01 Jan 2026 09:42:23 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:42:23 GMT express:router session  : /vendor/css/core.css
+Thu, 01 Jan 2026 09:42:23 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:42:23 GMT express-session session found
+Thu, 01 Jan 2026 09:42:23 GMT express:router cookieParser  : /vendor/css/core.css
+Thu, 01 Jan 2026 09:42:23 GMT express:router serveStatic  : /vendor/css/core.css
+Thu, 01 Jan 2026 09:42:23 GMT send stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/css/core.css"
+Thu, 01 Jan 2026 09:42:23 GMT send pipe "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/css/core.css"
+Thu, 01 Jan 2026 09:42:23 GMT send accept ranges
+Thu, 01 Jan 2026 09:42:23 GMT send cache-control public, max-age=0
+Thu, 01 Jan 2026 09:42:23 GMT send modified Thu, 01 Jan 2026 08:57:50 GMT
+Thu, 01 Jan 2026 09:42:23 GMT send etag W/"efac5-19b78c71150"
+Thu, 01 Jan 2026 09:42:23 GMT send content-type text/css
+Thu, 01 Jan 2026 09:42:23 GMT send not modified
+Thu, 01 Jan 2026 09:42:23 GMT express-session touching
+Thu, 01 Jan 2026 09:42:23 GMT express-session touched
+Thu, 01 Jan 2026 09:42:23 GMT express:router dispatching GET /vendor/css/theme-default.css
+Thu, 01 Jan 2026 09:42:23 GMT express:router query  : /vendor/css/theme-default.css
+Thu, 01 Jan 2026 09:42:23 GMT express:router expressInit  : /vendor/css/theme-default.css
+Thu, 01 Jan 2026 09:42:23 GMT express:router jsonParser  : /vendor/css/theme-default.css
+Thu, 01 Jan 2026 09:42:23 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:42:23 GMT express:router session  : /vendor/css/theme-default.css
+Thu, 01 Jan 2026 09:42:23 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:42:23 GMT express:router dispatching GET /css/demo.css
+Thu, 01 Jan 2026 09:42:23 GMT express:router query  : /css/demo.css
+Thu, 01 Jan 2026 09:42:23 GMT express:router expressInit  : /css/demo.css
+Thu, 01 Jan 2026 09:42:23 GMT express:router jsonParser  : /css/demo.css
+Thu, 01 Jan 2026 09:42:23 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:42:23 GMT express:router session  : /css/demo.css
+Thu, 01 Jan 2026 09:42:23 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:42:23 GMT express-session session found
+Thu, 01 Jan 2026 09:42:23 GMT express:router cookieParser  : /vendor/css/theme-default.css
+Thu, 01 Jan 2026 09:42:23 GMT express:router serveStatic  : /vendor/css/theme-default.css
+Thu, 01 Jan 2026 09:42:23 GMT send stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/css/theme-default.css"
+Thu, 01 Jan 2026 09:42:23 GMT express-session session found
+Thu, 01 Jan 2026 09:42:23 GMT express:router cookieParser  : /css/demo.css
+Thu, 01 Jan 2026 09:42:23 GMT express:router serveStatic  : /css/demo.css
+Thu, 01 Jan 2026 09:42:23 GMT send stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/css/demo.css"
+Thu, 01 Jan 2026 09:42:23 GMT express:router dispatching GET /vendor/libs/perfect-scrollbar/perfect-scrollbar.css
+Thu, 01 Jan 2026 09:42:23 GMT express:router query  : /vendor/libs/perfect-scrollbar/perfect-scrollbar.css
+Thu, 01 Jan 2026 09:42:23 GMT express:router expressInit  : /vendor/libs/perfect-scrollbar/perfect-scrollbar.css
+Thu, 01 Jan 2026 09:42:23 GMT express:router jsonParser  : /vendor/libs/perfect-scrollbar/perfect-scrollbar.css
+Thu, 01 Jan 2026 09:42:23 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:42:23 GMT express:router session  : /vendor/libs/perfect-scrollbar/perfect-scrollbar.css
+Thu, 01 Jan 2026 09:42:23 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:42:23 GMT send pipe "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/css/theme-default.css"
+Thu, 01 Jan 2026 09:42:23 GMT send accept ranges
+Thu, 01 Jan 2026 09:42:23 GMT send cache-control public, max-age=0
+Thu, 01 Jan 2026 09:42:23 GMT send modified Thu, 01 Jan 2026 08:57:50 GMT
+Thu, 01 Jan 2026 09:42:23 GMT send etag W/"113f0-19b78c71154"
+Thu, 01 Jan 2026 09:42:23 GMT send content-type text/css
+Thu, 01 Jan 2026 09:42:23 GMT send not modified
+Thu, 01 Jan 2026 09:42:23 GMT express-session touching
+Thu, 01 Jan 2026 09:42:23 GMT express-session session found
+Thu, 01 Jan 2026 09:42:23 GMT express:router cookieParser  : /vendor/libs/perfect-scrollbar/perfect-scrollbar.css
+Thu, 01 Jan 2026 09:42:23 GMT express:router serveStatic  : /vendor/libs/perfect-scrollbar/perfect-scrollbar.css
+Thu, 01 Jan 2026 09:42:23 GMT send stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/libs/perfect-scrollbar/perfect-scrollbar.css"
+Thu, 01 Jan 2026 09:42:23 GMT express-session touched
+Thu, 01 Jan 2026 09:42:23 GMT send pipe "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/css/demo.css"
+Thu, 01 Jan 2026 09:42:23 GMT send accept ranges
+Thu, 01 Jan 2026 09:42:23 GMT send cache-control public, max-age=0
+Thu, 01 Jan 2026 09:42:23 GMT send modified Thu, 01 Jan 2026 08:57:50 GMT
+Thu, 01 Jan 2026 09:42:23 GMT send etag W/"9ef-19b78c71148"
+Thu, 01 Jan 2026 09:42:23 GMT send content-type text/css
+Thu, 01 Jan 2026 09:42:23 GMT send not modified
+Thu, 01 Jan 2026 09:42:23 GMT express-session touching
+Thu, 01 Jan 2026 09:42:23 GMT express:router dispatching GET /vendor/css/pages/page-auth.css
+Thu, 01 Jan 2026 09:42:23 GMT express:router query  : /vendor/css/pages/page-auth.css
+Thu, 01 Jan 2026 09:42:23 GMT express:router expressInit  : /vendor/css/pages/page-auth.css
+Thu, 01 Jan 2026 09:42:23 GMT express:router jsonParser  : /vendor/css/pages/page-auth.css
+Thu, 01 Jan 2026 09:42:23 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:42:23 GMT express:router session  : /vendor/css/pages/page-auth.css
+Thu, 01 Jan 2026 09:42:23 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:42:23 GMT express-session touched
+Thu, 01 Jan 2026 09:42:23 GMT express-session session found
+Thu, 01 Jan 2026 09:42:23 GMT express:router cookieParser  : /vendor/css/pages/page-auth.css
+Thu, 01 Jan 2026 09:42:23 GMT express:router serveStatic  : /vendor/css/pages/page-auth.css
+Thu, 01 Jan 2026 09:42:23 GMT send stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/css/pages/page-auth.css"
+Thu, 01 Jan 2026 09:42:23 GMT send pipe "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/libs/perfect-scrollbar/perfect-scrollbar.css"
+Thu, 01 Jan 2026 09:42:23 GMT send accept ranges
+Thu, 01 Jan 2026 09:42:23 GMT send cache-control public, max-age=0
+Thu, 01 Jan 2026 09:42:23 GMT send modified Thu, 01 Jan 2026 08:57:50 GMT
+Thu, 01 Jan 2026 09:42:23 GMT send etag W/"1390-19b78c71188"
+Thu, 01 Jan 2026 09:42:23 GMT send content-type text/css
+Thu, 01 Jan 2026 09:42:23 GMT send not modified
+Thu, 01 Jan 2026 09:42:23 GMT express-session touching
+Thu, 01 Jan 2026 09:42:23 GMT express:router dispatching GET /js/config.js
+Thu, 01 Jan 2026 09:42:23 GMT express:router query  : /js/config.js
+Thu, 01 Jan 2026 09:42:23 GMT express:router expressInit  : /js/config.js
+Thu, 01 Jan 2026 09:42:23 GMT express:router jsonParser  : /js/config.js
+Thu, 01 Jan 2026 09:42:23 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:42:23 GMT express:router session  : /js/config.js
+Thu, 01 Jan 2026 09:42:23 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:42:23 GMT express:router dispatching GET /vendor/js/helpers.js
+Thu, 01 Jan 2026 09:42:23 GMT express:router query  : /vendor/js/helpers.js
+Thu, 01 Jan 2026 09:42:23 GMT express:router expressInit  : /vendor/js/helpers.js
+Thu, 01 Jan 2026 09:42:23 GMT express:router jsonParser  : /vendor/js/helpers.js
+Thu, 01 Jan 2026 09:42:23 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:42:23 GMT express:router session  : /vendor/js/helpers.js
+Thu, 01 Jan 2026 09:42:23 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:42:23 GMT express-session touched
+Thu, 01 Jan 2026 09:42:23 GMT express-session session found
+Thu, 01 Jan 2026 09:42:23 GMT express:router cookieParser  : /js/config.js
+Thu, 01 Jan 2026 09:42:23 GMT express:router serveStatic  : /js/config.js
+Thu, 01 Jan 2026 09:42:23 GMT send stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/js/config.js"
+Thu, 01 Jan 2026 09:42:23 GMT express-session session found
+Thu, 01 Jan 2026 09:42:23 GMT express:router cookieParser  : /vendor/js/helpers.js
+Thu, 01 Jan 2026 09:42:23 GMT express:router serveStatic  : /vendor/js/helpers.js
+Thu, 01 Jan 2026 09:42:23 GMT send stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/js/helpers.js"
+Thu, 01 Jan 2026 09:42:23 GMT send pipe "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/css/pages/page-auth.css"
+Thu, 01 Jan 2026 09:42:23 GMT send accept ranges
+Thu, 01 Jan 2026 09:42:23 GMT send cache-control public, max-age=0
+Thu, 01 Jan 2026 09:42:23 GMT send modified Thu, 01 Jan 2026 08:57:50 GMT
+Thu, 01 Jan 2026 09:42:23 GMT send etag W/"8d2c-19b78c71154"
+Thu, 01 Jan 2026 09:42:23 GMT send content-type text/css
+Thu, 01 Jan 2026 09:42:23 GMT send not modified
+Thu, 01 Jan 2026 09:42:23 GMT express-session touching
+Thu, 01 Jan 2026 09:42:23 GMT send pipe "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/js/config.js"
+Thu, 01 Jan 2026 09:42:23 GMT send accept ranges
+Thu, 01 Jan 2026 09:42:23 GMT send cache-control public, max-age=0
+Thu, 01 Jan 2026 09:42:23 GMT send modified Thu, 01 Jan 2026 08:57:50 GMT
+Thu, 01 Jan 2026 09:42:23 GMT send etag W/"2ca-19b78c7114c"
+Thu, 01 Jan 2026 09:42:23 GMT send content-type application/javascript
+Thu, 01 Jan 2026 09:42:23 GMT send not modified
+Thu, 01 Jan 2026 09:42:23 GMT express-session touching
+Thu, 01 Jan 2026 09:42:23 GMT send pipe "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/js/helpers.js"
+Thu, 01 Jan 2026 09:42:23 GMT send accept ranges
+Thu, 01 Jan 2026 09:42:23 GMT send cache-control public, max-age=0
+Thu, 01 Jan 2026 09:42:23 GMT send modified Thu, 01 Jan 2026 08:57:50 GMT
+Thu, 01 Jan 2026 09:42:23 GMT send etag W/"192a7-19b78c71168"
+Thu, 01 Jan 2026 09:42:23 GMT send content-type application/javascript
+Thu, 01 Jan 2026 09:42:23 GMT send not modified
+Thu, 01 Jan 2026 09:42:23 GMT express-session touching
+Thu, 01 Jan 2026 09:42:23 GMT express:router dispatching GET /vendor/libs/jquery/jquery.js
+Thu, 01 Jan 2026 09:42:23 GMT express:router query  : /vendor/libs/jquery/jquery.js
+Thu, 01 Jan 2026 09:42:23 GMT express:router expressInit  : /vendor/libs/jquery/jquery.js
+Thu, 01 Jan 2026 09:42:23 GMT express:router jsonParser  : /vendor/libs/jquery/jquery.js
+Thu, 01 Jan 2026 09:42:23 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:42:23 GMT express:router session  : /vendor/libs/jquery/jquery.js
+Thu, 01 Jan 2026 09:42:23 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:42:23 GMT express-session touched
+Thu, 01 Jan 2026 09:42:23 GMT express-session touched
+Thu, 01 Jan 2026 09:42:23 GMT express-session touched
+Thu, 01 Jan 2026 09:42:23 GMT express-session session found
+Thu, 01 Jan 2026 09:42:23 GMT express:router cookieParser  : /vendor/libs/jquery/jquery.js
+Thu, 01 Jan 2026 09:42:23 GMT express:router serveStatic  : /vendor/libs/jquery/jquery.js
+Thu, 01 Jan 2026 09:42:23 GMT send stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/libs/jquery/jquery.js"
+Thu, 01 Jan 2026 09:42:23 GMT express:router dispatching GET /vendor/libs/popper/popper.js
+Thu, 01 Jan 2026 09:42:23 GMT express:router query  : /vendor/libs/popper/popper.js
+Thu, 01 Jan 2026 09:42:23 GMT express:router expressInit  : /vendor/libs/popper/popper.js
+Thu, 01 Jan 2026 09:42:23 GMT express:router jsonParser  : /vendor/libs/popper/popper.js
+Thu, 01 Jan 2026 09:42:23 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:42:23 GMT express:router session  : /vendor/libs/popper/popper.js
+Thu, 01 Jan 2026 09:42:23 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:42:23 GMT express-session session found
+Thu, 01 Jan 2026 09:42:23 GMT express:router cookieParser  : /vendor/libs/popper/popper.js
+Thu, 01 Jan 2026 09:42:23 GMT express:router serveStatic  : /vendor/libs/popper/popper.js
+Thu, 01 Jan 2026 09:42:23 GMT send stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/libs/popper/popper.js"
+Thu, 01 Jan 2026 09:42:23 GMT send pipe "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/libs/jquery/jquery.js"
+Thu, 01 Jan 2026 09:42:23 GMT send accept ranges
+Thu, 01 Jan 2026 09:42:23 GMT send cache-control public, max-age=0
+Thu, 01 Jan 2026 09:42:23 GMT send modified Thu, 01 Jan 2026 08:57:50 GMT
+Thu, 01 Jan 2026 09:42:23 GMT send etag W/"cb5ce-19b78c71184"
+Thu, 01 Jan 2026 09:42:23 GMT send content-type application/javascript
+Thu, 01 Jan 2026 09:42:23 GMT send not modified
+Thu, 01 Jan 2026 09:42:23 GMT express-session touching
+Thu, 01 Jan 2026 09:42:23 GMT express:router dispatching GET /vendor/libs/perfect-scrollbar/perfect-scrollbar.js
+Thu, 01 Jan 2026 09:42:23 GMT express:router query  : /vendor/libs/perfect-scrollbar/perfect-scrollbar.js
+Thu, 01 Jan 2026 09:42:24 GMT express:router expressInit  : /vendor/libs/perfect-scrollbar/perfect-scrollbar.js
+Thu, 01 Jan 2026 09:42:24 GMT express:router jsonParser  : /vendor/libs/perfect-scrollbar/perfect-scrollbar.js
+Thu, 01 Jan 2026 09:42:24 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:42:24 GMT express:router session  : /vendor/libs/perfect-scrollbar/perfect-scrollbar.js
+Thu, 01 Jan 2026 09:42:24 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:42:24 GMT express:router dispatching GET /vendor/js/bootstrap.js
+Thu, 01 Jan 2026 09:42:24 GMT express:router query  : /vendor/js/bootstrap.js
+Thu, 01 Jan 2026 09:42:24 GMT express:router expressInit  : /vendor/js/bootstrap.js
+Thu, 01 Jan 2026 09:42:24 GMT express:router jsonParser  : /vendor/js/bootstrap.js
+Thu, 01 Jan 2026 09:42:24 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:42:24 GMT express:router session  : /vendor/js/bootstrap.js
+Thu, 01 Jan 2026 09:42:24 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:42:24 GMT express-session touched
+Thu, 01 Jan 2026 09:42:24 GMT express-session session found
+Thu, 01 Jan 2026 09:42:24 GMT express:router cookieParser  : /vendor/libs/perfect-scrollbar/perfect-scrollbar.js
+Thu, 01 Jan 2026 09:42:24 GMT express:router serveStatic  : /vendor/libs/perfect-scrollbar/perfect-scrollbar.js
+Thu, 01 Jan 2026 09:42:24 GMT send stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"
+Thu, 01 Jan 2026 09:42:24 GMT express-session session found
+Thu, 01 Jan 2026 09:42:24 GMT express:router cookieParser  : /vendor/js/bootstrap.js
+Thu, 01 Jan 2026 09:42:24 GMT express:router serveStatic  : /vendor/js/bootstrap.js
+Thu, 01 Jan 2026 09:42:24 GMT send stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/js/bootstrap.js"
+Thu, 01 Jan 2026 09:42:24 GMT send pipe "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/libs/popper/popper.js"
+Thu, 01 Jan 2026 09:42:24 GMT send accept ranges
+Thu, 01 Jan 2026 09:42:24 GMT send cache-control public, max-age=0
+Thu, 01 Jan 2026 09:42:24 GMT send modified Thu, 01 Jan 2026 08:57:50 GMT
+Thu, 01 Jan 2026 09:42:24 GMT send etag W/"e194-19b78c7118c"
+Thu, 01 Jan 2026 09:42:24 GMT send content-type application/javascript
+Thu, 01 Jan 2026 09:42:24 GMT send not modified
+Thu, 01 Jan 2026 09:42:24 GMT express-session touching
+Thu, 01 Jan 2026 09:42:24 GMT send pipe "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"
+Thu, 01 Jan 2026 09:42:24 GMT send accept ranges
+Thu, 01 Jan 2026 09:42:24 GMT send cache-control public, max-age=0
+Thu, 01 Jan 2026 09:42:24 GMT send modified Thu, 01 Jan 2026 08:57:50 GMT
+Thu, 01 Jan 2026 09:42:24 GMT send etag W/"1a8cb-19b78c71188"
+Thu, 01 Jan 2026 09:42:24 GMT send content-type application/javascript
+Thu, 01 Jan 2026 09:42:24 GMT send not modified
+Thu, 01 Jan 2026 09:42:24 GMT express-session touching
+Thu, 01 Jan 2026 09:42:24 GMT send pipe "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/js/bootstrap.js"
+Thu, 01 Jan 2026 09:42:24 GMT send accept ranges
+Thu, 01 Jan 2026 09:42:24 GMT send cache-control public, max-age=0
+Thu, 01 Jan 2026 09:42:24 GMT send modified Thu, 01 Jan 2026 08:57:50 GMT
+Thu, 01 Jan 2026 09:42:24 GMT send etag W/"cda64-19b78c71168"
+Thu, 01 Jan 2026 09:42:24 GMT send content-type application/javascript
+Thu, 01 Jan 2026 09:42:24 GMT send not modified
+Thu, 01 Jan 2026 09:42:24 GMT express-session touching
+Thu, 01 Jan 2026 09:42:24 GMT express:router dispatching GET /vendor/js/menu.js
+Thu, 01 Jan 2026 09:42:24 GMT express:router query  : /vendor/js/menu.js
+Thu, 01 Jan 2026 09:42:24 GMT express:router expressInit  : /vendor/js/menu.js
+Thu, 01 Jan 2026 09:42:24 GMT express:router jsonParser  : /vendor/js/menu.js
+Thu, 01 Jan 2026 09:42:24 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:42:24 GMT express:router session  : /vendor/js/menu.js
+Thu, 01 Jan 2026 09:42:24 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:42:24 GMT express:router dispatching GET /js/main.js
+Thu, 01 Jan 2026 09:42:24 GMT express:router query  : /js/main.js
+Thu, 01 Jan 2026 09:42:24 GMT express:router expressInit  : /js/main.js
+Thu, 01 Jan 2026 09:42:24 GMT express:router jsonParser  : /js/main.js
+Thu, 01 Jan 2026 09:42:24 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:42:24 GMT express:router session  : /js/main.js
+Thu, 01 Jan 2026 09:42:24 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:42:24 GMT express-session touched
+Thu, 01 Jan 2026 09:42:24 GMT express-session touched
+Thu, 01 Jan 2026 09:42:24 GMT express-session touched
+Thu, 01 Jan 2026 09:42:24 GMT express-session session found
+Thu, 01 Jan 2026 09:42:24 GMT express:router cookieParser  : /vendor/js/menu.js
+Thu, 01 Jan 2026 09:42:24 GMT express:router serveStatic  : /vendor/js/menu.js
+Thu, 01 Jan 2026 09:42:24 GMT send stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/js/menu.js"
+Thu, 01 Jan 2026 09:42:24 GMT express-session session found
+Thu, 01 Jan 2026 09:42:24 GMT express:router cookieParser  : /js/main.js
+Thu, 01 Jan 2026 09:42:24 GMT express:router serveStatic  : /js/main.js
+Thu, 01 Jan 2026 09:42:24 GMT send stat "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/js/main.js"
+Thu, 01 Jan 2026 09:42:24 GMT send pipe "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/vendor/js/menu.js"
+Thu, 01 Jan 2026 09:42:24 GMT send accept ranges
+Thu, 01 Jan 2026 09:42:24 GMT send cache-control public, max-age=0
+Thu, 01 Jan 2026 09:42:24 GMT send modified Thu, 01 Jan 2026 08:57:50 GMT
+Thu, 01 Jan 2026 09:42:24 GMT send etag W/"13937-19b78c71168"
+Thu, 01 Jan 2026 09:42:24 GMT send content-type application/javascript
+Thu, 01 Jan 2026 09:42:24 GMT send not modified
+Thu, 01 Jan 2026 09:42:24 GMT express-session touching
+Thu, 01 Jan 2026 09:42:24 GMT send pipe "/home/kali/Desktop/internship/vuln-node.js-express.js-app/src/public/js/main.js"
+Thu, 01 Jan 2026 09:42:24 GMT send accept ranges
+Thu, 01 Jan 2026 09:42:24 GMT send cache-control public, max-age=0
+Thu, 01 Jan 2026 09:42:24 GMT send modified Thu, 01 Jan 2026 08:57:50 GMT
+Thu, 01 Jan 2026 09:42:24 GMT send etag W/"f06-19b78c7114c"
+Thu, 01 Jan 2026 09:42:24 GMT send content-type application/javascript
+Thu, 01 Jan 2026 09:42:24 GMT send not modified
+Thu, 01 Jan 2026 09:42:24 GMT express-session touching
+Thu, 01 Jan 2026 09:42:24 GMT express-session touched
+Thu, 01 Jan 2026 09:42:24 GMT express-session touched
+Thu, 01 Jan 2026 09:42:43 GMT express:router dispatching GET /login
+Thu, 01 Jan 2026 09:42:43 GMT express:router query  : /login
+Thu, 01 Jan 2026 09:42:43 GMT express:router expressInit  : /login
+Thu, 01 Jan 2026 09:42:43 GMT express:router jsonParser  : /login
+Thu, 01 Jan 2026 09:42:43 GMT body-parser:json skip empty body
+Thu, 01 Jan 2026 09:42:43 GMT express:router session  : /login
+Thu, 01 Jan 2026 09:42:43 GMT express-session fetching 1767260444447
+Thu, 01 Jan 2026 09:42:43 GMT express-session session found
+Thu, 01 Jan 2026 09:42:43 GMT express:router cookieParser  : /login
+/home/kali/Desktop/internship/vuln-node.js-express.js-app/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1746
+      throw new Error(`WHERE parameter "${key}" has invalid "undefined" value`);
+            ^
+
+Error: WHERE parameter "email" has invalid "undefined" value
+    at SQLiteQueryGenerator.whereItemQuery (/home/kali/Desktop/internship/vuln-node.js-express.js-app/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1746:13)
+    at /home/kali/Desktop/internship/vuln-node.js-express.js-app/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1737:25
+    at Array.forEach (<anonymous>)
+    at SQLiteQueryGenerator.whereItemsQuery (/home/kali/Desktop/internship/vuln-node.js-express.js-app/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1735:35)
+    at /home/kali/Desktop/internship/vuln-node.js-express.js-app/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1843:30
+    at Array.map (<anonymous>)
+    at SQLiteQueryGenerator._whereGroupBind (/home/kali/Desktop/internship/vuln-node.js-express.js-app/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1842:21)
+    at SQLiteQueryGenerator.whereItemQuery (/home/kali/Desktop/internship/vuln-node.js-express.js-app/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1793:19)
+    at /home/kali/Desktop/internship/vuln-node.js-express.js-app/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1737:25
+    at Array.forEach (<anonymous>)
+
+Node.js v18.20.8
